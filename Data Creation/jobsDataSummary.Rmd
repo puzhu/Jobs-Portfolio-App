@@ -1,0 +1,161 @@
+---
+title: "Exploratory Analysis of the Jobs Portfolio Data"
+output: 
+  html_notebook: 
+    number_sections: yes
+---
+
+```{r, echo=FALSE, warning=FALSE}
+library(tidyverse); library(ggthemes); library(viridis); library(stringr)
+rm(list = ls())
+```
+
+##Data Pre-processing
+The data pre-processing steps are as follows
+
+1. Remove all the unneccasary columns
+2. Filter out the projects that are either active or in the pipeline.
+3. Gather the data into a long format that represents the job types as a column
+4. Join in the intervention types (macro meso etc) and the job types (more, better etc)
+5. Change variable names
+
+```{r, message=FALSE}
+projectData <- read_csv("raw data/jobsData.csv") %>% 
+        select(Proj.ID, 4, Proj.Type, Proj.FY, Proj.Region, Proj.Country, 10, Proj.Product_Line, Proj.Status, 227:243)
+notClosed <- sum(projectData$Proj.Status != "Closed")
+missingData <- nrow(projectData[projectData$Proj.Status != "Closed" & is.na(projectData$Intervention), ])
+
+projectData <- projectData %>% 
+        filter(Proj.Status != "Closed" & !is.na(Intervention)) %>% 
+        gather(key = jobsName, value = value, 11:26) %>% 
+        left_join(., read_csv("raw data/interventionTypes.csv"), by = c("Intervention")) %>% 
+        left_join(., read_csv("raw data/jobTypes.csv"), by = c("jobsName"))
+
+## Change var names
+names(projectData) <- c("id", "gP", "projType", "fY", "region", "country", "countryType", "productLine", "status", "intervention", "jobsName", "value", "interventionType", "jobsType")
+```
+
+## Some data issues
+
+1. **Incomplete data: **The total number of active and pipeline projects is **`r notClosed`** out of these **`r missingData`** are missing the intervention type data (i.e. macro, meso etc). The total number of projects with information that we can visualize is **999**.
+2. **Country variable contains regions:** The country variable in the dataset contains projects that are marked as Africa, Central America etc, instead of the names of the country.
+3. **Skew** towards certain regions, job and intervention types.
+
+##Projects by Year
+As expected there are more projects that are active or in the pipeline that are more recent.
+```{r}
+projectData %>% 
+        group_by(fY) %>% 
+        summarise(nProject = n_distinct(id)) %>% 
+        ggplot(aes(x = fY, y = nProject)) +
+        geom_bar(stat = "identity") +
+        labs(x = "FY", y = "No. of Projects") +
+        theme_tufte()
+```
+
+
+##Projects by region
+```{r}
+projectData %>% 
+        group_by(region) %>% 
+        summarise(nProject = n_distinct(id)) %>% 
+        ggplot(aes(x = reorder(region, nProject), y = nProject)) +
+        geom_bar(stat = "identity") +
+        labs(x = "Region", y = "No. of Projects") +
+        theme_tufte()
+```
+
+##Project by GP
+There is a skew towards certain GPs in the data.
+```{r, fig.align='center', fig.width=12}
+projectData %>% 
+        group_by(gP) %>% 
+        summarise(nProject = n_distinct(id)) %>% 
+        ggplot(aes(x = reorder(gP, nProject), y = nProject)) +
+        geom_bar(stat = "identity") +
+        scale_x_discrete(label = function(x) str_wrap(x, width = 12)) +
+        labs(x = "Global Practice", y = "No. of Projects") +
+        theme_tufte()
+```
+
+## Countries with more than 15 projects
+We only have a few countries that have more than 15 projects. This counld be an issue if we are planning on doing cross country comparisons.
+
+```{r, fig.align="center", fig.width=12}
+projectData %>% 
+        group_by(country) %>% 
+        summarise(nProject = n_distinct(id)) %>% 
+        filter(nProject >= 15) %>% 
+        ggplot(aes(x = reorder(country, nProject), y = nProject)) +
+        geom_bar(stat = "identity") +
+        scale_x_discrete(label = function(x) str_wrap(x, width = 10)) +
+        labs(x = "country", y = "No. of Projects") +
+        theme_tufte()
+```
+
+## Projects by intervention types
+
+```{r, fig.align='center', fig.width=9}
+projectData %>% 
+        group_by(intervention) %>% 
+        summarise(interventionType = unique(interventionType), interventionValue = sum(value == "Yes", na.rm = T)) %>% 
+        mutate(interventionType = factor(interventionType, levels = c("Macro-economic conditions", "Meso-level: Business Environment", "Micro- level: Individuals/ Firms"))) %>%
+        ggplot(aes(x = intervention, y = interventionValue)) +
+        geom_bar(stat = "identity") +
+        facet_wrap(~ interventionType, strip.position = "top", scales = "free_x", ncol = 1) +
+        scale_x_discrete(label = function(x) str_wrap(x, width = 20)) +
+        labs(x = "Intervention Names", y = "Total Count of Yes") +
+        theme_tufte() + 
+        theme(panel.spacing = unit(0, "lines"), strip.background = element_blank(), strip.placement = "outside",strip.text.x = element_text(size = 14))
+
+```
+
+## Projects by job types
+
+```{r, fig.align='center', fig.width=12}
+projectData %>% 
+        group_by(jobsName) %>% 
+        summarise(jobsType = unique(jobsType), jobValue = sum(value == "Yes", na.rm = T)) %>% 
+        mutate(jobsType = factor(jobsType, levels = c("Intermediate Outcomes", "Job Creation", "Job Quality", "Job Access"))) %>%
+        ggplot(aes(x = jobsName, y = jobValue)) +
+        geom_bar(stat = "identity") +
+        facet_wrap(~ jobsType, strip.position = "top", scales = "free_x") +
+        scale_x_discrete(label = function(x) str_wrap(x, width = 20)) +
+        labs(x = "Job Names", y = "Total Count of Yes") +
+        theme_tufte() + 
+        theme(panel.spacing = unit(0, "lines"), strip.background = element_blank(), strip.placement = "outside", strip.text.x = element_text(size = 14))
+```
+
+##Basic heatmaps of the current data
+
+```{r, fig.width=12}
+projectData %>% 
+        mutate(interventionType = factor(interventionType, levels = c("Macro-economic conditions", "Meso-level: Business Environment", "Micro- level: Individuals/ Firms"), ordered = T), jobsType = factor(jobsType, levels = c("Intermediate Outcomes", "Job Creation", "Job Quality", "Job Access"))) %>% 
+        group_by(interventionType, jobsType) %>% 
+        summarise(value = sum(value == "Yes", na.rm = T)) %>% 
+        arrange(interventionType, jobsType) %>% 
+        ggplot(aes(x = jobsType, y = interventionType)) +
+        geom_tile(aes(fill = value), linetype = 3) +
+        scale_x_discrete(label = function(x) str_wrap(x, width = 12)) +
+        scale_y_discrete(label = function(x) str_wrap(x, width = 15)) +
+        scale_fill_viridis(option = "plasma", alpha = 0.5, direction = -1) +
+        theme_tufte() +
+        theme(axis.text = element_text(size = 12), axis.title = element_blank())
+```
+
+
+```{r, fig.width=12, fig.height=12}
+projectData %>% 
+        group_by(intervention, jobsName) %>% 
+        summarise(interventionType = unique(interventionType), jobsType = unique(jobsType), value = sum(value == "Yes", na.rm = T)) %>% 
+        mutate(interventionType = factor(interventionType, levels = c("Macro-economic conditions", "Meso-level: Business Environment", "Micro- level: Individuals/ Firms"), ordered = T), jobsType = factor(jobsType, levels = c("Intermediate Outcomes", "Job Creation", "Job Quality", "Job Access"))) %>% 
+        arrange(interventionType, jobsType) %>% 
+        ggplot(aes(x = jobsName, y = intervention)) +
+        geom_tile(aes(fill = value), linetype = 3) +
+        scale_x_discrete(label = function(x) str_wrap(x, width = 12)) +
+        scale_y_discrete(label = function(x) str_wrap(x, width = 15)) +
+        scale_fill_viridis(option = "plasma", alpha = 0.5, direction = -1) +
+        theme_tufte() +
+        theme(axis.title = element_blank(), axis.text = element_text(size = 12))
+```
+
