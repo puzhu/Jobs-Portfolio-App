@@ -1,0 +1,55 @@
+---
+title: "Create the dataset for Jobs Portfolio Visualisation"
+output: 
+  html_notebook: 
+    number_sections: yes
+---
+##Summary
+The data relevant to the portfolio visualisation was copied from the excel file that was sent by Vinay into a .csv. This file is loaded in this section to create the final dataset.
+
+##Loading the data
+The data pre-processing steps are as follows
+
+1. Remove all the unneccasary columns
+2. Filter out the projects that are either active or in the pipeline.
+3. Gather the data into a long format that represents the job types as a column
+4. Join in the intervention types (macro meso etc) and the job types (more, better etc)
+5. Change variable names
+6. Filter out the rows with relevant values (i.e. the categories marked "yes")
+
+```{r, message=FALSE}
+library(tidyverse);
+rm(list = ls())
+
+##Load the data and select vars of interest
+projectData <- read_csv("raw data/jobsData.csv") %>% 
+        select(Proj.ID, 4, Proj.Type, Proj.FY, Proj.Region, Proj.Country, 10, Proj.Product_Line, Proj.Status, 227:243) 
+
+projectData <- projectData %>% 
+        filter(Proj.Status != "Closed" & !is.na(Intervention)) %>% ##Filter out projects that miss intervention tags and those that are either active or in the pipeline
+        gather(key = jobsName, value = value, 11:26) %>% ##convert to long format
+        left_join(., read_csv("raw data/interventionTypes.csv"), by = c("Intervention")) %>% 
+        left_join(., read_csv("raw data/jobTypes.csv"), by = c("jobsName"))
+
+## Change var names
+names(projectData) <- c("id", "gP", "projType", "fY", "region", "country", "countryType", "productLine", "status", "intervention", "jobsName", "value", "interventionType", "jobsType")
+
+##Filter those rows that are marked a yes (since we are only interested in the counts of yes for each cell)
+projectData <- projectData %>% 
+        filter(!is.na(value))
+```
+
+##Variable checks
+All the variable values were checked to make sure that they were consistent. THe only issue is that the country variable does not accurately represent projects that span multiple countries. Entries are labelled as continents for such cases.
+
+##Selecting specific variables to be used for the visualisation
+Here I further narrow the data to select only those variables that are being used in the current iteration of the app. This list can be widened when we need to.
+
+```{r}
+projectData %>% 
+        select(id, region, country, gP, status, intervention, interventionType, jobsName, jobsType, value) %>% 
+        arrange(id) %>% 
+        write_csv(., "../data/projectData.csv")
+
+```
+
