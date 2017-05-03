@@ -47,7 +47,7 @@ Here I further narrow the data to select only those variables that are being use
 
 ```{r}
 projectData %>% 
-        select(id, region, country, gP, status, intervention, interventionType, jobsName, jobsType, value) %>% 
+        select(interventionType, intervention, jobsType, jobsName, value, id, region, country, gP, status) %>% 
         arrange(id) %>% 
         write_csv(., "../data/projectData.csv")
 

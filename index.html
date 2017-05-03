@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta http-equiv="Cache-control" content="no-store">
+
+<head>
+<title>Jobs Portfolio Visualization</title>
+
+<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/tool-tip-style.css">
+
+
+</head>
+<body>
+  <div class="container">
+    <div class="row" id='lead-section'>
+      <h2>Jobs Portfolio Dashboard</h2>
+      <p>
+        This dashboard shows the relationships between jobs, productivity and GDP (growth rates). Use the dropdowns on the x-axis of the scatter charts to change plotting variables. Please note that selection of sector specific productivity on the x-axis of the left-most chart also changes the y-axis of the chart on the right side (to reflect the current sector). The x-axis on the rightmost chart swaps between x-axis variable on the first chart and GDP growth rates. The best way to get familiarized with the dashboard is to start using. Keep an eye on the chart headings since they automatically update to give you the current plotting variables.
+      </p>
+    </div>
+    <div class="row">
+      <div class="col-xs-4" id="controls">
+        <p>CONTROLS</p>
+      </div>
+      <div class="col-xs-8">
+        <div class="row" id="outerClabels"></div>
+        <div class="row" id="innerClabels"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-1" id="outerRlabels"></div>
+      <div class="col-xs-3" id="innerRlabels"></div>
+      <div class="col-xs-8" id="heatmap"></div>
+    </div>
+
+  </div>
+
+
+  <!-- <script src="scripts/preventCJ.js"></script> -->
+  <!-- <script src="https://npmcdn.com/simple-statistics@2.0.0-beta3/dist/simple-statistics.min.js"></script> -->
+  <script src="libs/simple-statistics.min.js"></script>
+  <script src="libs/jquery-2.2.4.min.js"></script>
+  <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+  <script src="libs/d3.min.js"></script>
+  <script src="libs/d3-tool-tip.js"></script>
+	<script src="scripts/main.js"></script>
+</body>
+</html>

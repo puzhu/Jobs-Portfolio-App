@@ -1,0 +1,41 @@
+
+
+#outerClabels{
+  height: 100px;
+  border: 2px solid blue
+}
+#innerClabels{
+  height: 100px;
+  border: 2px solid green
+}
+#controls{
+  height: 200px;
+  border: 3px solid black
+}
+#outerRlabels{
+  height: 600px;
+  border: 2px solid blue;
+  text-align: right;
+  /*
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transition: transform 10s;
+  transition: transform 1s;
+  */
+
+}
+#innerRlabels{
+  height: 600px;
+  border: 2px solid green;
+  text-align: center;
+}
+
+#heatmap{
+  height: 600px;
+  border: 1px dotted red;
+}
+
+.outerRowLabels{
+  text-align: right;
+}
