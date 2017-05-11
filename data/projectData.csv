@@ -14,7 +14,7 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P066914,LCR,St. Lucia,Environment & Natural Resources GP,Pipeline
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P068049,EAP,China,Energy & Extractives GP,Active
 Meso-level: Business Environment,Infrastructure-Energy,Job Creation,New enterprises,Yes,P068049,EAP,China,Energy & Extractives GP,Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P068419,SAR,Bangladesh,Governance GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P068419,SAR,Bangladesh,Governance GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P069063,ECA,Russian Federation,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P069063,ECA,Russian Federation,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P072179,MNA,Lebanon,Environment & Natural Resources GP,Pipeline
@@ -98,14 +98,14 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P091031,SAR,India,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P091145,ECA,Albania,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P091145,ECA,Albania,Environment & Natural Resources GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P091283,AFR,Central African Republic,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P091283,AFR,Central African Republic,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P091949,EAP,China,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P091949,EAP,China,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P091950,EAP,China,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P091950,EAP,China,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P092217,SAR,India,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P092217,SAR,India,"Urban, Rural & Social GP",Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P092429,ECA,Russian Federation,Poverty GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P092429,ECA,Russian Federation,Poverty GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes,Access to/ working of product markets,Yes,P092509,AFR,Ghana,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P092509,AFR,Ghana,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Access,Labor force participation,Yes,P092509,AFR,Ghana,Transport and ICT GP,Active
@@ -144,15 +144,15 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P095901,SAR,India,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P095925,MNA,"Egypt, Arab Republic of",Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P095925,MNA,"Egypt, Arab Republic of",Environment & Natural Resources GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P096105,AFR,Sierra Leone,Agriculture GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P096105,AFR,Sierra Leone,Agriculture GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P096105,AFR,Sierra Leone,Agriculture GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P096105,AFR,Sierra Leone,Agriculture GP,Active
 Meso-level: Business Environment,Infrastructure-Irrigation/Water,Job Quality,Earnings/ livelihood,Yes,P096409,ECA,Kyrgyz Republic,Water GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P096648,AFR,Nigeria,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P096648,AFR,Nigeria,Agriculture GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes,Access to/ working of product markets,Yes,P096931,EAP,Tonga,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P096931,EAP,Tonga,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Access,Labor force participation,Yes,P096931,EAP,Tonga,Transport and ICT GP,Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P097604,LCR,Uruguay,Governance GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P097604,LCR,Uruguay,Governance GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P097742,AFR,Uganda,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P097742,AFR,Uganda,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P097985,SAR,India,Environment & Natural Resources GP,Active
@@ -173,7 +173,7 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Lab
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P099047,SAR,India,Education GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Quality,Earnings/ livelihood,Yes,P099047,SAR,India,Education GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P099047,SAR,India,Education GP,Active
-Macro-economic conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P099376,EAP,Vietnam,Governance GP,Active
+Macro-level: Economic Conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P099376,EAP,Vietnam,Governance GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P099460,EAP,Vietnam,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P099460,EAP,Vietnam,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P099528,ECA,Romania,Environment & Natural Resources GP,Active
@@ -215,8 +215,8 @@ Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force partic
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Youth,Yes,P102549,SAR,India,Education GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P102839,LCR,Colombia,Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P102839,LCR,Colombia,Environment & Natural Resources GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P103499,AFR,Nigeria,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P103499,AFR,Nigeria,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P103499,AFR,Nigeria,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P103499,AFR,Nigeria,Trade & Competitiveness GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P104015,SAR,Nepal,Education GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Quality,Earnings/ livelihood,Yes,P104015,SAR,Nepal,Education GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P104015,SAR,Nepal,Education GP,Active
@@ -226,7 +226,7 @@ Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Fir
 Meso-level: Business Environment,Infrastructure-Energy,Job Creation,New enterprises,Yes,P104456,AFR,Cameroon,Energy & Extractives GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P104567,LCR,Colombia,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P104567,LCR,Colombia,Agriculture GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P104881,AFR,Benin,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P104881,AFR,Benin,Trade & Competitiveness GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P104901,SAR,India,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P104901,SAR,India,Agriculture GP,Active
 Meso-level: Business Environment,Spatial Development,Intermediate Outcomes,Access to/ working of product markets,Yes,P104995,LCR,Brazil,"Urban, Rural & Social GP",Active
@@ -352,7 +352,7 @@ Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Inte
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Creation,New enterprises,Yes,P111780,ECA,Bosnia and Herzegovina,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P111918,LCR,Chile,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P111918,LCR,Chile,Environment & Natural Resources GP,Active
-Macro-economic conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P111942,ECA,Armenia,Governance GP,Active
+Macro-level: Economic Conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P111942,ECA,Armenia,Governance GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Intermediate Outcomes,Firm performance/ investment,Yes,P112011,LCR,Guatemala,Trade & Competitiveness GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Creation,Job creation (by employers),Yes,P112011,LCR,Guatemala,Trade & Competitiveness GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Creation,Entrepreneurs/self-employed,Yes,P112011,LCR,Guatemala,Trade & Competitiveness GP,Active
@@ -399,9 +399,9 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P113629,AFR,Africa,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P113794,OTH,World,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P113794,OTH,World,Environment & Natural Resources GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P113971,AFR,Madagascar,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P113971,AFR,Madagascar,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P113971,AFR,Madagascar,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P113971,AFR,Madagascar,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P113971,AFR,Madagascar,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P113971,AFR,Madagascar,Trade & Competitiveness GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes,Access to/ working of product markets,Yes,P114018,LCR,Argentina,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P114018,LCR,Argentina,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Access,Labor force participation,Yes,P114018,LCR,Argentina,Transport and ICT GP,Active
@@ -489,7 +489,7 @@ Micro- level: Individuals/ Firms,Skills & Training,Job Access,Youth,Yes,P116520,
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P116521,EAP,Papua New Guinea,Education GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P116521,EAP,Papua New Guinea,Education GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Youth,Yes,P116521,EAP,Papua New Guinea,Education GP,Active
-Macro-economic conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P116696,ECA,Kazakhstan,Governance GP,Active
+Macro-level: Economic Conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P116696,ECA,Kazakhstan,Governance GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Public Employment,Job Quality,Earnings/ livelihood,Yes,P116774,ECA,Bosnia and Herzegovina,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Public Employment,Job Access,Working of labor market,Yes,P116774,ECA,Bosnia and Herzegovina,Social Protection & Labor GP,Active
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P117091,AFR,Africa,Energy & Extractives GP,Active
@@ -540,7 +540,7 @@ Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/
 Meso-level: Business Environment,Infrastructure- Transport,Job Access,Labor force participation,Yes,P118375,ECA,Belarus,Transport and ICT GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P118779,SAR,Pakistan,Education GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P118779,SAR,Pakistan,Education GP,Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P118858,AFR,Ghana,Poverty GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P118858,AFR,Ghana,Poverty GP,Active
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P118925,SAR,Afghanistan,Energy & Extractives GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P118974,AFR,Mauritania,Education GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P118974,AFR,Mauritania,Education GP,Active
@@ -552,7 +552,7 @@ Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Inte
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Firm performance/ investment,Yes,P119043,SAR,India,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Creation,New enterprises,Yes,P119043,SAR,India,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Access,Gender,Yes,P119043,SAR,India,Finance & Markets GP,Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P119139,SAR,Bangladesh,Governance GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P119139,SAR,Bangladesh,Governance GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Quality,Earnings/ livelihood,Yes,P119307,MNA,West Bank and Gaza,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P119308,AFR,Cote d'Ivoire,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P119308,AFR,Cote d'Ivoire,Agriculture GP,Active
@@ -561,11 +561,11 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Lab
 Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes,Access to/ working of product markets,Yes,P119471,EAP,Papua New Guinea,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P119471,EAP,Papua New Guinea,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Access,Labor force participation,Yes,P119471,EAP,Papua New Guinea,Transport and ICT GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P119662,AFR,Burkina Faso,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P119662,AFR,Burkina Faso,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P119662,AFR,Burkina Faso,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P119662,AFR,Burkina Faso,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P119825,EAP,Mongolia,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P119662,AFR,Burkina Faso,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P119662,AFR,Burkina Faso,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P119662,AFR,Burkina Faso,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P119662,AFR,Burkina Faso,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P119825,EAP,Mongolia,Macro & Fiscal Management GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes,Access to/ working of product markets,Yes,P119862,EAP,China,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P119862,EAP,China,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Access,Labor force participation,Yes,P119862,EAP,China,Transport and ICT GP,Active
@@ -581,7 +581,7 @@ Micro- level: Individuals/ Firms,Skills & Training,Job Access,Youth,Yes,P120233,
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P120234,EAP,China,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P120234,EAP,China,"Urban, Rural & Social GP",Active
 Meso-level: Business Environment,Labor Policies,Job Access,Working of labor market,Yes,P120435,ECA,Kyrgyz Republic,"Health, Nutrition & Population GP",Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P120536,AFR,Tanzania,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P120536,AFR,Tanzania,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P120561,MNA,Tunisia,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P120561,MNA,Tunisia,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Public Employment,Job Quality,Earnings/ livelihood,Yes,P120622,LCR,Argentina,Social Protection & Labor GP,Active
@@ -596,9 +596,9 @@ Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Inte
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Creation,New enterprises,Yes,P120707,EAP,Papua New Guinea,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P120836,SAR,India,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P120836,SAR,India,Agriculture GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P120843,SAR,Bangladesh,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P120843,SAR,Bangladesh,Trade & Competitiveness GP,Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P120985,ECA,Kazakhstan,Poverty GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P120843,SAR,Bangladesh,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P120843,SAR,Bangladesh,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P120985,ECA,Kazakhstan,Poverty GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Creation,Entrepreneurs/self-employed,Yes,P121009,EAP,Philippines,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P121009,EAP,Philippines,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P121009,EAP,Philippines,Agriculture GP,Pipeline
@@ -625,13 +625,13 @@ Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Inte
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Creation,New enterprises,Yes,P121328,SAR,Sri Lanka,Finance & Markets GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes,Access to/ working of product markets,Yes,P121354,AFR,Africa,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P121354,AFR,Africa,Transport and ICT GP,Active
-Macro-economic conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P121455,AFR,Nigeria,Governance GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P121455,AFR,Nigeria,Governance GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P121475,SAR,India,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P121475,SAR,India,Agriculture GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes,Access to/ working of product markets,Yes,P121495,LCR,Brazil,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P121495,LCR,Brazil,Transport and ICT GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P121574,AFR,Togo,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P121574,AFR,Togo,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P121574,AFR,Togo,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P121574,AFR,Togo,Trade & Competitiveness GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P121631,EAP,Solomon Islands,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P121631,EAP,Solomon Islands,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P121686,AFR,Liberia,Social Protection & Labor GP,Active
@@ -710,13 +710,13 @@ Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force partic
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P123315,MNA,Djibouti,Education GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P123315,MNA,Djibouti,Education GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Quality,Earnings/ livelihood,Yes,P123399,AFR,Niger,Social Protection & Labor GP,Active
-Macro-economic conditions,Public Administration and Governance,Job Quality,Working conditions and benefits,Yes,P123403,EAP,Philippines,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P123403,EAP,Philippines,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Access,Working of labor market,Yes,P123403,EAP,Philippines,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Quality,Working conditions and benefits,Yes,P123403,EAP,Philippines,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P123403,EAP,Philippines,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Working of labor market,Yes,P123403,EAP,Philippines,Macro & Fiscal Management GP,Pipeline
 Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes,Access to/ working of product markets,Yes,P123447,LCR,Nicaragua,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P123447,LCR,Nicaragua,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Access,Labor force participation,Yes,P123447,LCR,Nicaragua,Transport and ICT GP,Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P123461,LCR,Uruguay,Governance GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P123461,LCR,Uruguay,Governance GP,Active
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P123572,AFR,Sierra Leone,Energy & Extractives GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Quality,Earnings/ livelihood,Yes,P123632,SAR,Sri Lanka,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P123673,AFR,Senegal,Education GP,Active
@@ -744,7 +744,7 @@ Micro- level: Individuals/ Firms,Labor Programs-Public Works,Job Quality,Earning
 Micro- level: Individuals/ Firms,Labor Programs-Public Works,Job Access,Working of labor market,Yes,P124157,LCR,Honduras,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P124198,AFR,Togo,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P124198,AFR,Togo,Environment & Natural Resources GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P124268,SAR,Pakistan,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P124268,SAR,Pakistan,Trade & Competitiveness GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Access to/ working of product markets,Yes,P124341,MNA,Tunisia,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Firm performance/ investment,Yes,P124341,MNA,Tunisia,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Creation,New enterprises,Yes,P124341,MNA,Tunisia,Finance & Markets GP,Active
@@ -760,18 +760,18 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Lab
 Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes,Access to/ working of product markets,Yes,P124639,SAR,India,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P124639,SAR,India,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Access,Labor force participation,Yes,P124639,SAR,India,Transport and ICT GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P124640,EAP,Lao People's Democratic Republic,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P124640,EAP,Lao People's Democratic Republic,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P124640,EAP,Lao People's Democratic Republic,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P124640,EAP,Lao People's Democratic Republic,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P124640,EAP,Lao People's Democratic Republic,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P124640,EAP,Lao People's Democratic Republic,Trade & Competitiveness GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P124702,EAP,Vietnam,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P124702,EAP,Vietnam,Environment & Natural Resources GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P124720,AFR,"Congo, Democratic Republic of",Agriculture GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P124720,AFR,"Congo, Democratic Republic of",Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P124720,AFR,"Congo, Democratic Republic of",Agriculture GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P124720,AFR,"Congo, Democratic Republic of",Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P124720,AFR,"Congo, Democratic Republic of",Agriculture GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P124720,AFR,"Congo, Democratic Republic of",Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P124720,AFR,"Congo, Democratic Republic of",Agriculture GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P124720,AFR,"Congo, Democratic Republic of",Agriculture GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P124720,AFR,"Congo, Democratic Republic of",Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P124720,AFR,"Congo, Democratic Republic of",Agriculture GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P124720,AFR,"Congo, Democratic Republic of",Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P124720,AFR,"Congo, Democratic Republic of",Agriculture GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P124720,AFR,"Congo, Democratic Republic of",Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P124720,AFR,"Congo, Democratic Republic of",Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P124775,AFR,Ghana,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P124775,AFR,Ghana,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P124812,AFR,Ghana,Environment & Natural Resources GP,Active
@@ -803,7 +803,7 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Lab
 Meso-level: Business Environment,Infrastructure-Irrigation/Water,Job Creation,Entrepreneurs/self-employed,Yes,P125473,AFR,Malawi,Water GP,Pipeline
 Meso-level: Business Environment,Infrastructure-Irrigation/Water,Job Quality,Worker productivity,Yes,P125473,AFR,Malawi,Water GP,Pipeline
 Meso-level: Business Environment,Infrastructure-Irrigation/Water,Job Quality,Earnings/ livelihood,Yes,P125473,AFR,Malawi,Water GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P125483,MNA,Jordan,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P125483,MNA,Jordan,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P125484,AFR,Tanzania,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P125484,AFR,Tanzania,Agriculture GP,Active
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P125487,AFR,Ethiopia,Energy & Extractives GP,Active
@@ -814,7 +814,7 @@ Meso-level: Business Environment,Spatial Development,Job Creation,New enterprise
 Meso-level: Business Environment,Spatial Development,Job Quality,Earnings/ livelihood,Yes,P125506,AFR,Senegal,"Urban, Rural & Social GP",Active
 Meso-level: Business Environment,Spatial Development,Job Access,Labor force participation,Yes,P125506,AFR,Senegal,"Urban, Rural & Social GP",Active
 Meso-level: Business Environment,Spatial Development,Job Access,Lagging regions,Yes,P125506,AFR,Senegal,"Urban, Rural & Social GP",Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P125509,AFR,"Congo, Democratic Republic of",Poverty GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P125509,AFR,"Congo, Democratic Republic of",Poverty GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P125585,AFR,Nigeria,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P125585,AFR,Nigeria,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Access to/ working of product markets,Yes,P125595,AFR,Ghana,Finance & Markets GP,Active
@@ -829,9 +829,9 @@ Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Cr
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Quality,Earnings/ livelihood,Yes,P125728,AFR,Tanzania,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Public Employment,Job Quality,Earnings/ livelihood,Yes,P125791,ECA,Armenia,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Public Employment,Job Access,Working of labor market,Yes,P125791,ECA,Armenia,Social Protection & Labor GP,Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P125799,MNA,Morocco,Governance GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P125799,MNA,Morocco,Governance GP,Active
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P125824,AFR,Tanzania,Energy & Extractives GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P125837,ECA,"Macedonia, former Yugoslav Republic of",Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P125837,ECA,"Macedonia, former Yugoslav Republic of",Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P125863,EAP,Mongolia,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P125863,EAP,Mongolia,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P125964,EAP,Mongolia,Agriculture GP,Active
@@ -863,14 +863,14 @@ Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Cr
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Creation,Entrepreneurs/self-employed,Yes,P126417,ECA,Belarus,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P126440,AFR,Rwanda,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P126440,AFR,Rwanda,Agriculture GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P126470,AFR,Senegal,Macro & Fiscal Management GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P126470,AFR,Senegal,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P126470,AFR,Senegal,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P126470,AFR,Senegal,Macro & Fiscal Management GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes,Access to/ working of product markets,Yes,P126507,EAP,Vietnam,Transport and ICT GP,Pipeline
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P126507,EAP,Vietnam,Transport and ICT GP,Pipeline
 Meso-level: Business Environment,Infrastructure- Transport,Job Access,Labor force participation,Yes,P126507,EAP,Vietnam,Transport and ICT GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P126549,AFR,Nigeria,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P126549,AFR,Nigeria,Environment & Natural Resources GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P126580,EAP,Philippines,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P126580,EAP,Philippines,Macro & Fiscal Management GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes,Access to/ working of product markets,Yes,P126605,EAP,Vietnam,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P126605,EAP,Vietnam,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Access,Labor force participation,Yes,P126605,EAP,Vietnam,Transport and ICT GP,Active
@@ -900,8 +900,8 @@ Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Interm
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Creation,Job creation (by employers),Yes,P127096,AFR,Eastern Africa,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Creation,Entrepreneurs/self-employed,Yes,P127096,AFR,Eastern Africa,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Quality,Earnings/ livelihood,Yes,P127200,AFR,Togo,Social Protection & Labor GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P127209,AFR,Guinea-Bissau,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P127209,AFR,Guinea-Bissau,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P127209,AFR,Guinea-Bissau,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P127209,AFR,Guinea-Bissau,Trade & Competitiveness GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Quality,Earnings/ livelihood,Yes,P127212,MNA,Tunisia,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P127258,AFR,Burundi,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P127258,AFR,Burundi,Environment & Natural Resources GP,Active
@@ -921,10 +921,10 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P127676,ECA,Russian Federation,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P127702,MNA,Jordan,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P127702,MNA,Jordan,Environment & Natural Resources GP,Active
-Macro-economic conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P127734,ECA,Moldova,Governance GP,Pipeline
+Macro-level: Economic Conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P127734,ECA,Moldova,Governance GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P127743,LCR,Bolivia,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P127743,LCR,Bolivia,Agriculture GP,Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P127807,ECA,Tajikistan,Governance GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P127807,ECA,Tajikistan,Governance GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P127813,EAP,Indonesia,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P127813,EAP,Indonesia,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P127861,MNA,Jordan,Agriculture GP,Active
@@ -989,7 +989,7 @@ Meso-level: Business Environment,Spatial Development,Job Creation,New enterprise
 Meso-level: Business Environment,Spatial Development,Job Quality,Earnings/ livelihood,Yes,P128756,EAP,Samoa,"Urban, Rural & Social GP",Active
 Meso-level: Business Environment,Spatial Development,Job Access,Lagging regions,Yes,P128756,EAP,Samoa,"Urban, Rural & Social GP",Active
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P128793,AFR,Guinea-Bissau,Energy & Extractives GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P128869,MNA,Morocco,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P128869,MNA,Morocco,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P128887,AFR,"Congo, Democratic Republic of",Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P128887,AFR,"Congo, Democratic Republic of",Environment & Natural Resources GP,Active
 Meso-level: Business Environment,Infrastructure-ICT,Intermediate Outcomes,Access to/ working of product markets,Yes,P128904,EAP,Samoa,Transport and ICT GP,Pipeline
@@ -1005,7 +1005,7 @@ Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P129000,AFR,South Sudan,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Access,Labor force participation,Yes,P129000,AFR,South Sudan,Transport and ICT GP,Active
 Meso-level: Business Environment,Labor Policies,Job Access,Working of labor market,Yes,P129024,AFR,Benin,"Health, Nutrition & Population GP",Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P129098,ECA,Poland,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P129098,ECA,Poland,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Access to/ working of product markets,Yes,P129326,MNA,Morocco,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Firm performance/ investment,Yes,P129326,MNA,Morocco,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Creation,New enterprises,Yes,P129326,MNA,Morocco,Finance & Markets GP,Active
@@ -1026,7 +1026,7 @@ Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Interm
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Creation,Entrepreneurs/self-employed,Yes,P129749,LCR,Uruguay,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P129769,AFR,Ghana,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P129769,AFR,Ghana,Environment & Natural Resources GP,Active
-Macro-economic conditions,Public Administration and Governance,Job Access,Working of labor market,Yes,P129786,LCR,St. Kitts and Nevis,Governance GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Working of labor market,Yes,P129786,LCR,St. Kitts and Nevis,Governance GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P129861,MNA,West Bank and Gaza,Education GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Quality,Earnings/ livelihood,Yes,P129861,MNA,West Bank and Gaza,Education GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P129861,MNA,West Bank and Gaza,Education GP,Active
@@ -1038,7 +1038,7 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P129961,ECA,Bosnia and Herzegovina,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P130012,AFR,Nigeria,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P130012,AFR,Nigeria,Agriculture GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P130051,ECA,Romania,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P130051,ECA,Romania,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P130119,AFR,South Sudan,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P130119,AFR,South Sudan,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Fragile,Yes,P130119,AFR,South Sudan,Agriculture GP,Pipeline
@@ -1091,13 +1091,13 @@ Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Inte
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Creation,New enterprises,Yes,P130864,ECA,Turkey,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P130873,AFR,Mali,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P130873,AFR,Mali,Agriculture GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P131001,EAP,Indonesia,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P131001,EAP,Indonesia,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P131001,EAP,Indonesia,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P131001,EAP,Indonesia,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Quality,Earnings/ livelihood,Yes,P131003,ECA,Armenia,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P131013,LCR,Peru,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P131013,LCR,Peru,Agriculture GP,Active
 Meso-level: Business Environment,Labor Policies,Job Access,Working of labor market,Yes,P131020,ECA,Moldova,"Health, Nutrition & Population GP",Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P131036,ECA,Armenia,Governance GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P131036,ECA,Armenia,Governance GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P131051,AFR,Benin,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P131051,AFR,Benin,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs-Public Works,Job Quality,Earnings/ livelihood,Yes,P131109,LCR,Dominican Republic,Social Protection & Labor GP,Pipeline
@@ -1120,7 +1120,7 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Lab
 Meso-level: Business Environment,Infrastructure-Irrigation/Water,Job Creation,Entrepreneurs/self-employed,Yes,P131431,MNA,Lebanon,Agriculture GP,Pipeline
 Meso-level: Business Environment,Infrastructure-Irrigation/Water,Job Quality,Worker productivity,Yes,P131431,MNA,Lebanon,Agriculture GP,Pipeline
 Meso-level: Business Environment,Infrastructure-Irrigation/Water,Job Quality,Earnings/ livelihood,Yes,P131431,MNA,Lebanon,Agriculture GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P131440,LCR,Uruguay,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P131440,LCR,Uruguay,Macro & Fiscal Management GP,Active
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P131462,EAP,Papua New Guinea,Energy & Extractives GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P131464,AFR,Rwanda,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P131464,AFR,Rwanda,Environment & Natural Resources GP,Active
@@ -1184,7 +1184,7 @@ Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force partic
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Youth,Yes,P132667,AFR,Benin,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P132698,SAR,Sri Lanka,Education GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P132698,SAR,Sri Lanka,Education GP,Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P132709,MNA,Tunisia,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P132709,MNA,Tunisia,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P132742,SAR,Afghanistan,Education GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Quality,Earnings/ livelihood,Yes,P132742,SAR,Afghanistan,Education GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P132742,SAR,Afghanistan,Education GP,Active
@@ -1219,8 +1219,8 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P132945,EAP,Indonesia,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P132998,AFR,Mauritania,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P132998,AFR,Mauritania,"Urban, Rural & Social GP",Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P133071,AFR,Nigeria,Governance GP,Active
-Macro-economic conditions,Public Administration and Governance,Job Creation,Job creation (by employers),Yes,P133071,AFR,Nigeria,Governance GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P133071,AFR,Nigeria,Governance GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Job Creation,Job creation (by employers),Yes,P133071,AFR,Nigeria,Governance GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P133129,LCR,Argentina,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P133129,LCR,Argentina,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Youth,Yes,P133129,LCR,Argentina,Social Protection & Labor GP,Active
@@ -1234,14 +1234,14 @@ Meso-level: Business Environment,Infrastructure- Transport,Job Access,Labor forc
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P133410,AFR,Ethiopia,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P133410,AFR,Ethiopia,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Quality,Earnings/ livelihood,Yes,P133597,AFR,Senegal,Social Protection & Labor GP,Active
-Macro-economic conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P133664,AFR,Ghana,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P133664,AFR,Ghana,Macro & Fiscal Management GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Access to/ working of product markets,Yes,P133687,AFR,Mozambique,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Firm performance/ investment,Yes,P133687,AFR,Mozambique,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Creation,New enterprises,Yes,P133687,AFR,Mozambique,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Public Employment,Job Quality,Earnings/ livelihood,Yes,P133699,MNA,"Yemen, Republic of",Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Public Employment,Job Access,Working of labor market,Yes,P133699,MNA,"Yemen, Republic of",Social Protection & Labor GP,Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P133731,AFR,"Congo, Republic of",Poverty GP,Active
-Macro-economic conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P133738,LCR,Guatemala,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P133731,AFR,"Congo, Republic of",Poverty GP,Active
+Macro-level: Economic Conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P133738,LCR,Guatemala,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Labor Programs-Public Works,Job Quality,Earnings/ livelihood,Yes,P133755,AFR,Comoros,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Labor Programs-Public Works,Job Access,Working of labor market,Yes,P133755,AFR,Comoros,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P133803,SAR,India,Environment & Natural Resources GP,Pipeline
@@ -1252,8 +1252,8 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P143184,LCR,Brazil,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P143192,AFR,Burkina Faso,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P143192,AFR,Burkina Faso,Agriculture GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P143302,AFR,Ethiopia,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P143302,AFR,Ethiopia,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P143302,AFR,Ethiopia,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P143302,AFR,Ethiopia,Trade & Competitiveness GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P143307,AFR,Africa,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P143307,AFR,Africa,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P143329,AFR,"Gambia, The",Agriculture GP,Active
@@ -1353,14 +1353,14 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P144762,AFR,Cote d'Ivoire,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P144813,MNA,"Yemen, Republic of",Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P144813,MNA,"Yemen, Republic of",Environment & Natural Resources GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P144825,EAP,Vietnam,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P144825,EAP,Vietnam,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets- Land,Intermediate Outcomes,Firm performance/ investment,Yes,P144889,SAR,India,Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets- Land,Job Creation,Job creation (by employers),Yes,P144889,SAR,India,Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P144902,AFR,Africa,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P144902,AFR,Africa,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Quality,Earnings/ livelihood,Yes,P144928,LCR,Honduras,Social Protection & Labor GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P144933,AFR,Lesotho,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P144933,AFR,Lesotho,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P144933,AFR,Lesotho,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P144933,AFR,Lesotho,Trade & Competitiveness GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P144994,ECA,Montenegro,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P144994,ECA,Montenegro,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Quality,Earnings/ livelihood,Yes,P145117,AFR,Guinea,Social Protection & Labor GP,Pipeline
@@ -1376,7 +1376,7 @@ Micro- level: Individuals/ Firms,Productive Assets- Land,Intermediate Outcomes,F
 Micro- level: Individuals/ Firms,Productive Assets- Land,Job Creation,Job creation (by employers),Yes,P145208,EAP,Vanuatu,Governance GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Public Employment,Job Quality,Earnings/ livelihood,Yes,P145241,MNA,Jordan,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Public Employment,Job Access,Working of labor market,Yes,P145241,MNA,Jordan,Social Protection & Labor GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P145251,AFR,Niger,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P145251,AFR,Niger,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Quality,Earnings/ livelihood,Yes,P145263,AFR,"Congo, Republic of",Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P145309,AFR,Uganda,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Quality,Earnings/ livelihood,Yes,P145309,AFR,Uganda,Education GP,Pipeline
@@ -1391,8 +1391,8 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P145419,SAR,India,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P145420,SAR,Pakistan,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P145420,SAR,Pakistan,"Urban, Rural & Social GP",Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P145443,SAR,Afghanistan,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P145443,SAR,Afghanistan,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P145443,SAR,Afghanistan,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P145443,SAR,Afghanistan,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Public Employment,Job Quality,Earnings/ livelihood,Yes,P145468,LCR,Haiti,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Public Employment,Job Access,Working of labor market,Yes,P145468,LCR,Haiti,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Quality,Earnings/ livelihood,Yes,P145518,AFR,Zimbabwe,Social Protection & Labor GP,Pipeline
@@ -1432,10 +1432,10 @@ Micro- level: Individuals/ Firms,Labor Programs-Public Works,Job Access,Working 
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P146152,AFR,Gabon,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Quality,Earnings/ livelihood,Yes,P146152,AFR,Gabon,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P146152,AFR,Gabon,Education GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P146212,AFR,Africa,Macro & Fiscal Management GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P146212,AFR,Africa,Macro & Fiscal Management GP,Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P146243,ECA,Poland,Macro & Fiscal Management GP,Active
-Macro-economic conditions,Public Administration and Governance,Job Creation,New enterprises,Yes,P146243,ECA,Poland,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P146212,AFR,Africa,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P146212,AFR,Africa,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P146243,ECA,Poland,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Job Creation,New enterprises,Yes,P146243,ECA,Poland,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Access to/ working of product markets,Yes,P146244,MNA,"Egypt, Arab Republic of",Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Firm performance/ investment,Yes,P146244,MNA,"Egypt, Arab Republic of",Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Creation,New enterprises,Yes,P146244,MNA,"Egypt, Arab Republic of",Finance & Markets GP,Active
@@ -1448,25 +1448,25 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Lab
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Access to/ working of product markets,Yes,P146319,AFR,Nigeria,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Firm performance/ investment,Yes,P146319,AFR,Nigeria,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Creation,New enterprises,Yes,P146319,AFR,Nigeria,Finance & Markets GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P146322,ECA,Turkey,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P146322,ECA,Turkey,Macro & Fiscal Management GP,Active
 Meso-level: Business Environment,Spatial Development,Intermediate Outcomes,Access to/ working of product markets,Yes,P146463,ECA,Russian Federation,"Urban, Rural & Social GP",Pipeline
 Meso-level: Business Environment,Spatial Development,Intermediate Outcomes,Firm performance/ investment,Yes,P146463,ECA,Russian Federation,"Urban, Rural & Social GP",Pipeline
 Meso-level: Business Environment,Spatial Development,Job Creation,Job creation (by employers),Yes,P146463,ECA,Russian Federation,"Urban, Rural & Social GP",Pipeline
 Meso-level: Business Environment,Spatial Development,Job Quality,Earnings/ livelihood,Yes,P146463,ECA,Russian Federation,"Urban, Rural & Social GP",Pipeline
 Meso-level: Business Environment,Spatial Development,Job Access,Lagging regions,Yes,P146463,ECA,Russian Federation,"Urban, Rural & Social GP",Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P146469,AFR,Senegal,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P146469,AFR,Senegal,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P146469,AFR,Senegal,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P146469,AFR,Senegal,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P146474,AFR,Guinea,Education GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P146474,AFR,Guinea,Education GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P146477,AFR,Africa,Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P146477,AFR,Africa,Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Quality,Earnings/ livelihood,Yes,P146520,SAR,Bangladesh,Social Protection & Labor GP,Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P146567,AFR,Seychelles,Macro & Fiscal Management GP,Active
-Macro-economic conditions,Public Administration and Governance,Job Creation,New enterprises,Yes,P146567,AFR,Seychelles,Macro & Fiscal Management GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P146571,AFR,Burkina Faso,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P146571,AFR,Burkina Faso,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P146571,AFR,Burkina Faso,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P146571,AFR,Burkina Faso,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P146567,AFR,Seychelles,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Job Creation,New enterprises,Yes,P146567,AFR,Seychelles,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P146571,AFR,Burkina Faso,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P146571,AFR,Burkina Faso,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P146571,AFR,Burkina Faso,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P146571,AFR,Burkina Faso,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P146602,AFR,Mozambique,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P146602,AFR,Mozambique,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Youth,Yes,P146602,AFR,Mozambique,Education GP,Pipeline
@@ -1476,7 +1476,7 @@ Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Interm
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Creation,Job creation (by employers),Yes,P146666,AFR,Cabo Verde,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Creation,Entrepreneurs/self-employed,Yes,P146666,AFR,Cabo Verde,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Quality,Worker productivity,Yes,P146666,AFR,Cabo Verde,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Access,Working of labor market,Yes,P146695,AFR,Senegal,Poverty GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Working of labor market,Yes,P146695,AFR,Senegal,Poverty GP,Active
 Micro- level: Individuals/ Firms,Labor Programs-Public Works,Job Quality,Earnings/ livelihood,Yes,P146746,AFR,Guinea-Bissau,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Labor Programs-Public Works,Job Access,Working of labor market,Yes,P146746,AFR,Guinea-Bissau,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Access to/ working of product markets,Yes,P146799,MNA,Tunisia,Finance & Markets GP,Active
@@ -1488,8 +1488,8 @@ Micro- level: Individuals/ Firms,Skills & Training,Job Access,Youth,Yes,P146827,
 Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes,Access to/ working of product markets,Yes,P146845,LCR,Nicaragua,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P146845,LCR,Nicaragua,Transport and ICT GP,Active
 Meso-level: Business Environment,Infrastructure- Transport,Job Access,Labor force participation,Yes,P146845,LCR,Nicaragua,Transport and ICT GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P146890,ECA,Georgia,Macro & Fiscal Management GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P146890,ECA,Georgia,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P146890,ECA,Georgia,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P146890,ECA,Georgia,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Quality,Earnings/ livelihood,Yes,P146923,AFR,Ghana,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Intermediate Outcomes,Access to/ working of product markets,Yes,P146936,SAR,India,"Urban, Rural & Social GP",Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P146936,SAR,India,"Urban, Rural & Social GP",Pipeline
@@ -1498,15 +1498,15 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P146981,LCR,Brazil,Environment & Natural Resources GP,Pipeline
 Meso-level: Business Environment,Infrastructure-Irrigation/Water,Job Creation,Entrepreneurs/self-employed,Yes,P147000,AFR,Africa,Agriculture GP,Pipeline
 Meso-level: Business Environment,Infrastructure-Irrigation/Water,Job Quality,Earnings/ livelihood,Yes,P147000,AFR,Africa,Agriculture GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P147152,LCR,Grenada,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P147152,LCR,Grenada,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Access to/ working of product markets,Yes,P147183,ECA,Turkey,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Firm performance/ investment,Yes,P147183,ECA,Turkey,Finance & Markets GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Creation,New enterprises,Yes,P147183,ECA,Turkey,Finance & Markets GP,Active
 Meso-level: Business Environment,Labor Policies,Job Quality,Earnings/ livelihood,Yes,P147213,LCR,Dominican Republic,Social Protection & Labor GP,Pipeline
 Meso-level: Business Environment,Labor Policies,Job Access,Working of labor market,Yes,P147213,LCR,Dominican Republic,Social Protection & Labor GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P147235,MNA,West Bank and Gaza,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P147235,MNA,West Bank and Gaza,Trade & Competitiveness GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P147235,MNA,West Bank and Gaza,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P147235,MNA,West Bank and Gaza,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P147235,MNA,West Bank and Gaza,Trade & Competitiveness GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P147235,MNA,West Bank and Gaza,Trade & Competitiveness GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Intermediate Outcomes,Firm performance/ investment,Yes,P147241,AFR,Ghana,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Creation,Entrepreneurs/self-employed,Yes,P147241,AFR,Ghana,Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Quality,Earnings/ livelihood,Yes,P147241,AFR,Ghana,Social Protection & Labor GP,Active
@@ -1528,8 +1528,8 @@ Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Cr
 Meso-level: Business Environment,Labor Policies,Job Access,Working of labor market,Yes,P147489,AFR,Africa,"Health, Nutrition & Population GP",Active
 Micro- level: Individuals/ Firms,Labor Programs-Public Works,Job Quality,Earnings/ livelihood,Yes,P147541,EAP,Solomon Islands,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs-Public Works,Job Access,Working of labor market,Yes,P147541,EAP,Solomon Islands,"Urban, Rural & Social GP",Active
-Macro-economic conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P147557,SAR,Pakistan,Macro & Fiscal Management GP,Active
-Macro-economic conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P147564,EAP,Lao People's Democratic Republic,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P147557,SAR,Pakistan,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P147564,EAP,Lao People's Democratic Republic,Macro & Fiscal Management GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P147605,AFR,Rwanda,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P147605,AFR,Rwanda,Agriculture GP,Active
 Meso-level: Business Environment,Labor Policies,Job Quality,Earnings/ livelihood,Yes,P147638,AFR,Niger,"Health, Nutrition & Population GP",Pipeline
@@ -1539,7 +1539,7 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P147674,AFR,Africa,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P147689,MNA,Jordan,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P147689,MNA,Jordan,"Urban, Rural & Social GP",Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P147695,LCR,Brazil,Transport and ICT GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P147695,LCR,Brazil,Transport and ICT GP,Active
 Meso-level: Business Environment,Labor Policies,Intermediate Outcomes,Firm performance/ investment,Yes,P147745,AFR,Zambia,"Health, Nutrition & Population GP",Pipeline
 Meso-level: Business Environment,Labor Policies,Job Access,Working of labor market,Yes,P147745,AFR,Zambia,"Health, Nutrition & Population GP",Pipeline
 Meso-level: Business Environment,Labor Policies,Intermediate Outcomes,Firm performance/ investment,Yes,P147758,AFR,Guinea,"Health, Nutrition & Population GP",Pipeline
@@ -1550,7 +1550,7 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Lab
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Intermediate Outcomes,Access to/ working of product markets,Yes,P147773,SAR,Afghanistan,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P147773,SAR,Afghanistan,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P147773,SAR,Afghanistan,Agriculture GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P147803,EAP,Philippines,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P147803,EAP,Philippines,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P147833,ECA,Caucasus,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P147833,ECA,Caucasus,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P147861,ECA,Azerbaijan,"Urban, Rural & Social GP",Active
@@ -1633,7 +1633,7 @@ Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P148853,AFR,Africa,Transport and ICT GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Access to/ working of product markets,Yes,P148858,ECA,Turkey,Finance & Markets GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Firm performance/ investment,Yes,P148858,ECA,Turkey,Finance & Markets GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P148862,EAP,Philippines,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P148862,EAP,Philippines,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P148870,SAR,India,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P148870,SAR,India,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P148886,AFR,Guinea-Bissau,Agriculture GP,Active
@@ -1645,14 +1645,14 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Lab
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P148943,AFR,Somalia,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P148943,AFR,Somalia,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Fragile,Yes,P148943,AFR,Somalia,Agriculture GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P148957,ECA,Romania,Macro & Fiscal Management GP,Active
-Macro-economic conditions,Public Administration and Governance,Job Creation,New enterprises,Yes,P148957,ECA,Romania,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P148957,ECA,Romania,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Job Creation,New enterprises,Yes,P148957,ECA,Romania,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P149049,AFR,"Congo, Democratic Republic of",Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P149049,AFR,"Congo, Democratic Republic of",Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P149116,LCR,Haiti,"Urban, Rural & Social GP",Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P149116,LCR,Haiti,"Urban, Rural & Social GP",Active
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P149138,AFR,Tanzania,Energy & Extractives GP,Pipeline
-Macro-economic conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P149152,MNA,Djibouti,Governance GP,Active
+Macro-level: Economic Conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P149152,MNA,Djibouti,Governance GP,Active
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P149233,AFR,"Congo, Democratic Republic of",Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P149233,AFR,"Congo, Democratic Republic of",Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Youth,Yes,P149233,AFR,"Congo, Democratic Republic of",Education GP,Pipeline
@@ -1665,7 +1665,7 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P149305,AFR,Burkina Faso,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Quality,Earnings/ livelihood,Yes,P149323,AFR,Madagascar,Social Protection & Labor GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Access,Labor force participation,Yes,P149323,AFR,Madagascar,Social Protection & Labor GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P149388,EAP,Mongolia,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P149388,EAP,Mongolia,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P149434,AFR,Burkina Faso,Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P149434,AFR,Burkina Faso,Environment & Natural Resources GP,Pipeline
 Meso-level: Business Environment,Infrastructure-ICT,Intermediate Outcomes,Access to/ working of product markets,Yes,P149459,MNA,Morocco,Transport and ICT GP,Pipeline
@@ -1694,14 +1694,14 @@ Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Cr
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Creation,Entrepreneurs/self-employed,Yes,P149553,SAR,Bangladesh,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Quality,Worker productivity,Yes,P149553,SAR,Bangladesh,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Quality,Earnings/ livelihood,Yes,P149553,SAR,Bangladesh,Agriculture GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Access to/ working of product markets,Yes,P149555,ECA,Moldova,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P149555,ECA,Moldova,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Creation,Entrepreneurs/self-employed,Yes,P149555,ECA,Moldova,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Access to/ working of product markets,Yes,P149555,ECA,Moldova,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P149555,ECA,Moldova,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Creation,Entrepreneurs/self-employed,Yes,P149555,ECA,Moldova,Macro & Fiscal Management GP,Pipeline
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P149599,EAP,Lao People's Democratic Republic,Energy & Extractives GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P149605,SAR,Bangladesh,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P149605,SAR,Bangladesh,Agriculture GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P149609,LCR,Colombia,Macro & Fiscal Management GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P149609,LCR,Colombia,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P149609,LCR,Colombia,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P149609,LCR,Colombia,Macro & Fiscal Management GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P149620,AFR,Mozambique,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P149620,AFR,Mozambique,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs-Public Works,Job Quality,Earnings/ livelihood,Yes,P149621,MNA,Djibouti,Social Protection & Labor GP,Active
@@ -1718,7 +1718,7 @@ Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human c
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P149690,AFR,"Congo, Republic of","Urban, Rural & Social GP",Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P149737,EAP,Indonesia,"Urban, Rural & Social GP",Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P149737,EAP,Indonesia,"Urban, Rural & Social GP",Pipeline
-Macro-economic conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P149743,ECA,Montenegro,Governance GP,Pipeline
+Macro-level: Economic Conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P149743,ECA,Montenegro,Governance GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Intermediate Outcomes,Access to/ working of product markets,Yes,P149747,MNA,Morocco,Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P149747,MNA,Morocco,Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P149747,MNA,Morocco,Environment & Natural Resources GP,Pipeline
@@ -1729,24 +1729,24 @@ Meso-level: Business Environment,Infrastructure-ICT,Job Creation,New enterprises
 Meso-level: Business Environment,Infrastructure-ICT,Job Quality,Worker productivity,Yes,P149757,MNA,West Bank and Gaza,Transport and ICT GP,Pipeline
 Meso-level: Business Environment,Infrastructure-ICT,Job Access,Labor force participation,Yes,P149757,MNA,West Bank and Gaza,Transport and ICT GP,Pipeline
 Meso-level: Business Environment,Infrastructure-ICT,Job Access,Youth,Yes,P149757,MNA,West Bank and Gaza,Transport and ICT GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P149768,ECA,Bosnia and Herzegovina,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Creation,Job creation (by employers),Yes,P149768,ECA,Bosnia and Herzegovina,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P149768,ECA,Bosnia and Herzegovina,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Access,Fragile,Yes,P149768,ECA,Bosnia and Herzegovina,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P149781,ECA,Poland,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P149781,ECA,Poland,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P149768,ECA,Bosnia and Herzegovina,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Creation,Job creation (by employers),Yes,P149768,ECA,Bosnia and Herzegovina,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P149768,ECA,Bosnia and Herzegovina,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Fragile,Yes,P149768,ECA,Bosnia and Herzegovina,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P149781,ECA,Poland,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P149781,ECA,Poland,Macro & Fiscal Management GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P149801,AFR,Cote d'Ivoire,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P149801,AFR,Cote d'Ivoire,Environment & Natural Resources GP,Active
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P149804,ECA,"Macedonia, former Yugoslav Republic of",Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P149886,EAP,Solomon Islands,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P149804,ECA,"Macedonia, former Yugoslav Republic of",Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P149886,EAP,Solomon Islands,Macro & Fiscal Management GP,Active
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P149942,AFR,Togo,Environment & Natural Resources GP,Pipeline
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P149959,LCR,St. Lucia,Energy & Extractives GP,Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P149963,EAP,Tonga,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P149963,EAP,Tonga,Macro & Fiscal Management GP,Active
 Meso-level: Business Environment,Labor Policies,Job Access,Working of labor market,Yes,P149965,AFR,Uganda,Social Protection & Labor GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P149991,ECA,Georgia,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P149991,ECA,Georgia,Macro & Fiscal Management GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P149992,AFR,Mozambique,Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P149992,AFR,Mozambique,Environment & Natural Resources GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P149998,ECA,Georgia,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P149998,ECA,Georgia,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P150006,AFR,Africa,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P150006,AFR,Africa,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Access to/ working of product markets,Yes,P150008,AFR,South Africa,Finance & Markets GP,Pipeline
@@ -1790,7 +1790,7 @@ Meso-level: Business Environment,Infrastructure-ICT,Job Creation,Job creation (b
 Meso-level: Business Environment,Infrastructure-ICT,Job Creation,New enterprises,Yes,P150388,ECA,"Macedonia, former Yugoslav Republic of",Transport and ICT GP,Pipeline
 Meso-level: Business Environment,Infrastructure-ICT,Job Quality,Worker productivity,Yes,P150388,ECA,"Macedonia, former Yugoslav Republic of",Transport and ICT GP,Pipeline
 Meso-level: Business Environment,Infrastructure-ICT,Job Access,Labor force participation,Yes,P150388,ECA,"Macedonia, former Yugoslav Republic of",Transport and ICT GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P150406,AFR,Sierra Leone,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P150406,AFR,Sierra Leone,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Access,Labor force participation,Yes,P150430,AFR,Mauritania,Social Protection & Labor GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P150450,ECA,Albania,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P150450,ECA,Albania,Environment & Natural Resources GP,Active
@@ -1830,16 +1830,16 @@ Meso-level: Business Environment,Infrastructure-Irrigation/Water,Job Quality,Ear
 Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes,Access to/ working of product markets,Yes,P150937,AFR,Tanzania,Transport and ICT GP,Pipeline
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P150937,AFR,Tanzania,Transport and ICT GP,Pipeline
 Meso-level: Business Environment,Infrastructure- Transport,Job Access,Labor force participation,Yes,P150937,AFR,Tanzania,Transport and ICT GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P150941,AFR,Burundi,Macro & Fiscal Management GP,Active
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P150941,AFR,Burundi,Macro & Fiscal Management GP,Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Access to/ working of product markets,Yes,P150950,MNA,Tunisia,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Creation,Job creation (by employers),Yes,P150950,MNA,Tunisia,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Creation,New enterprises,Yes,P150950,MNA,Tunisia,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Human capital,Yes,P150976,AFR,Senegal,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P150976,AFR,Senegal,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Access,Working of labor market,Yes,P150976,AFR,Senegal,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151007,LCR,Paraguay,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151009,ECA,Croatia,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P150941,AFR,Burundi,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P150941,AFR,Burundi,Macro & Fiscal Management GP,Active
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Access to/ working of product markets,Yes,P150950,MNA,Tunisia,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Creation,Job creation (by employers),Yes,P150950,MNA,Tunisia,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Creation,New enterprises,Yes,P150950,MNA,Tunisia,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Human capital,Yes,P150976,AFR,Senegal,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P150976,AFR,Senegal,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Working of labor market,Yes,P150976,AFR,Senegal,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151007,LCR,Paraguay,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151009,ECA,Croatia,Macro & Fiscal Management GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P151030,MNA,Tunisia,Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P151030,MNA,Tunisia,Environment & Natural Resources GP,Pipeline
 Meso-level: Business Environment,Infrastructure-Irrigation/Water,Intermediate Outcomes,Firm performance/ investment,Yes,P151031,AFR,South Sudan,Agriculture GP,Pipeline
@@ -1849,9 +1849,9 @@ Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human c
 Micro- level: Individuals/ Firms,Skills & Training,Job Quality,Earnings/ livelihood,Yes,P151047,AFR,Botswana,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P151047,AFR,Botswana,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Youth,Yes,P151047,AFR,Botswana,Education GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P151058,AFR,Mauritania,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151058,AFR,Mauritania,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P151058,AFR,Mauritania,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P151058,AFR,Mauritania,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151058,AFR,Mauritania,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P151058,AFR,Mauritania,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P151059,MNA,Tunisia,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Creation,Entrepreneurs/self-employed,Yes,P151059,MNA,Tunisia,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Quality,Earnings/ livelihood,Yes,P151059,MNA,Tunisia,Education GP,Pipeline
@@ -1859,8 +1859,8 @@ Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force partic
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P151075,SAR,Pakistan,"Urban, Rural & Social GP",Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P151075,SAR,Pakistan,"Urban, Rural & Social GP",Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Youth,Yes,P151075,SAR,Pakistan,"Urban, Rural & Social GP",Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P151083,AFR,Africa,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151083,AFR,Africa,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P151083,AFR,Africa,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151083,AFR,Africa,Trade & Competitiveness GP,Pipeline
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P151086,EAP,Vietnam,Energy & Extractives GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Access to/ working of product markets,Yes,P151089,MNA,West Bank and Gaza,Finance & Markets GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Firm performance/ investment,Yes,P151089,MNA,West Bank and Gaza,Finance & Markets GP,Pipeline
@@ -1885,24 +1885,24 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P151294,AFR,Ethiopia,Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P151302,LCR,Jamaica,Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P151302,LCR,Jamaica,Environment & Natural Resources GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151324,AFR,Cote d'Ivoire,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P151324,AFR,Cote d'Ivoire,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151324,AFR,Cote d'Ivoire,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P151324,AFR,Cote d'Ivoire,Trade & Competitiveness GP,Pipeline
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P151363,ECA,Central Asia,Environment & Natural Resources GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151433,AFR,Swaziland,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151433,AFR,Swaziland,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Access,Labor force participation,Yes,P151443,AFR,Guinea-Bissau,Social Protection & Labor GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P151448,LCR,Jamaica,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P151448,LCR,Jamaica,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P151449,AFR,Mali,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151449,AFR,Mali,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P151449,AFR,Mali,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P151448,LCR,Jamaica,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P151448,LCR,Jamaica,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P151449,AFR,Mali,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151449,AFR,Mali,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P151449,AFR,Mali,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs-Public Works,Job Quality,Earnings/ livelihood,Yes,P151451,AFR,Zambia,Social Protection & Labor GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs-Public Works,Job Access,Working of labor market,Yes,P151451,AFR,Zambia,Social Protection & Labor GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs-Public Works,Job Access,Gender,Yes,P151451,AFR,Zambia,Social Protection & Labor GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Intermediate Outcomes,Access to/ working of product markets,Yes,P151469,AFR,Madagascar,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P151469,AFR,Madagascar,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P151469,AFR,Madagascar,Agriculture GP,Pipeline
-Macro-economic conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151479,ECA,Ukraine,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P151480,AFR,Nigeria,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Taxation/Fiscal Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P151479,ECA,Ukraine,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P151480,AFR,Nigeria,Macro & Fiscal Management GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P151484,AFR,Cote d'Ivoire,Social Protection & Labor GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P151484,AFR,Cote d'Ivoire,Social Protection & Labor GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Youth,Yes,P151484,AFR,Cote d'Ivoire,Social Protection & Labor GP,Pipeline
@@ -1911,11 +1911,11 @@ Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Inte
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Creation,New enterprises,Yes,P151544,SAR,India,Finance & Markets GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Creation,Entrepreneurs/self-employed,Yes,P151544,SAR,India,Finance & Markets GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Quality,Earnings/ livelihood,Yes,P151544,SAR,India,Finance & Markets GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P151579,AFR,Ethiopia,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P151579,AFR,Ethiopia,Macro & Fiscal Management GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P151583,AFR,Lesotho,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P151583,AFR,Lesotho,Education GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P151620,SAR,Pakistan,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P151620,SAR,Pakistan,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P151620,SAR,Pakistan,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P151620,SAR,Pakistan,Macro & Fiscal Management GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Access,Labor force participation,Yes,P151712,AFR,Ethiopia,Social Protection & Labor GP,Pipeline
 Meso-level: Business Environment,Infrastructure-Irrigation/Water,Job Creation,Entrepreneurs/self-employed,Yes,P151744,SAR,India,Agriculture GP,Pipeline
 Meso-level: Business Environment,Infrastructure-Irrigation/Water,Job Quality,Worker productivity,Yes,P151744,SAR,India,Agriculture GP,Pipeline
@@ -1928,8 +1928,8 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P151777,EAP,Solomon Islands,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P151780,EAP,Tuvalu,Environment & Natural Resources GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P151780,EAP,Tuvalu,Environment & Natural Resources GP,Active
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P151821,LCR,Grenada,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P151821,LCR,Grenada,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P151821,LCR,Grenada,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P151821,LCR,Grenada,Macro & Fiscal Management GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P151831,AFR,Kenya,Social Protection & Labor GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P151831,AFR,Kenya,Social Protection & Labor GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Youth,Yes,P151831,AFR,Kenya,Social Protection & Labor GP,Pipeline
@@ -1952,7 +1952,7 @@ Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force partic
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Access to/ working of product markets,Yes,P151861,AFR,Mozambique,Finance & Markets GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Intermediate Outcomes,Firm performance/ investment,Yes,P151861,AFR,Mozambique,Finance & Markets GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-Finance/Financial System,Job Creation,New enterprises,Yes,P151861,AFR,Mozambique,Finance & Markets GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P151869,AFR,Burundi,Agriculture GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P151869,AFR,Burundi,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Quality,Earnings/ livelihood,Yes,P151923,MNA,"Yemen, Republic of",Social Protection & Labor GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P151949,LCR,El Salvador,"Urban, Rural & Social GP",Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P151949,LCR,El Salvador,"Urban, Rural & Social GP",Pipeline
@@ -1967,17 +1967,17 @@ Meso-level: Business Environment,Infrastructure-Irrigation/Water,Job Quality,Ear
 Micro- level: Individuals/ Firms,Labor Programs- Wage Subsidies,Job Access,Labor force participation,Yes,P152057,LCR,Honduras,Social Protection & Labor GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P152066,EAP,Lao People's Democratic Republic,Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P152066,EAP,Lao People's Democratic Republic,Environment & Natural Resources GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P152104,ECA,Serbia,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P152104,ECA,Serbia,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P152104,ECA,Serbia,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P152104,ECA,Serbia,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P152115,ECA,Montenegro,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P152104,ECA,Serbia,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P152104,ECA,Serbia,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P152104,ECA,Serbia,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P152104,ECA,Serbia,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P152115,ECA,Montenegro,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Intermediate Outcomes,Firm performance/ investment,Yes,P152130,ECA,Croatia,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Creation,Job creation (by employers),Yes,P152130,ECA,Croatia,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Creation,Entrepreneurs/self-employed,Yes,P152130,ECA,Croatia,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Quality,Worker productivity,Yes,P152130,ECA,Croatia,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P152171,AFR,Ghana,Macro & Fiscal Management GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Creation,New enterprises,Yes,P152171,AFR,Ghana,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Intermediate Outcomes,Firm performance/ investment,Yes,P152171,AFR,Ghana,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Creation,New enterprises,Yes,P152171,AFR,Ghana,Macro & Fiscal Management GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P152210,SAR,India,Agriculture GP,Active
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P152210,SAR,India,Agriculture GP,Active
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P152232,EAP,Vietnam,Environment & Natural Resources GP,Pipeline
@@ -2012,10 +2012,10 @@ Micro- level: Individuals/ Firms,Skills & Training,Job Access,Fragile,Yes,P15279
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Firm performance/ investment,Yes,P152810,AFR,Tanzania,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P152810,AFR,Tanzania,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P152810,AFR,Tanzania,Education GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P152881,ECA,Kosovo,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P152881,ECA,Kosovo,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P152881,ECA,Kosovo,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P152881,ECA,Kosovo,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P152881,ECA,Kosovo,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P152881,ECA,Kosovo,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P152881,ECA,Kosovo,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P152881,ECA,Kosovo,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P152910,AFR,"Congo, Republic of",Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Quality,Earnings/ livelihood,Yes,P152910,AFR,"Congo, Republic of",Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P152910,AFR,"Congo, Republic of",Education GP,Pipeline
@@ -2028,7 +2028,7 @@ Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Fir
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Creation,Job creation (by employers),Yes,P152961,MNA,"Egypt, Arab Republic of","Urban, Rural & Social GP",Pipeline
 Micro- level: Individuals/ Firms,Productive Assets-MSME/ Entrepreneurship,Job Creation,Entrepreneurs/self-employed,Yes,P152961,MNA,"Egypt, Arab Republic of","Urban, Rural & Social GP",Pipeline
 Meso-level: Business Environment,Labor Policies,Job Access,Working of labor market,Yes,P152980,AFR,Africa,"Health, Nutrition & Population GP",Active
-Macro-economic conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P153018,LCR,Peru,Transport and ICT GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P153018,LCR,Peru,Transport and ICT GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P153042,EAP,Philippines,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P153042,EAP,Philippines,Agriculture GP,Pipeline
 Meso-level: Business Environment,Labor Policies,Intermediate Outcomes,Firm performance/ investment,Yes,P153064,AFR,Sierra Leone,"Health, Nutrition & Population GP",Pipeline
@@ -2067,8 +2067,8 @@ Meso-level: Business Environment,Infrastructure-ICT,Job Creation,Job creation (b
 Meso-level: Business Environment,Infrastructure-ICT,Job Creation,New enterprises,Yes,P153391,LCR,Central America,Transport and ICT GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P153429,EAP,East Asia and Pacific,Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P153429,EAP,East Asia and Pacific,Environment & Natural Resources GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P153487,MNA,"Egypt, Arab Republic of",Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P153487,MNA,"Egypt, Arab Republic of",Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P153487,MNA,"Egypt, Arab Republic of",Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P153487,MNA,"Egypt, Arab Republic of",Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Intermediate Outcomes,Access to/ working of product markets,Yes,P153541,EAP,China,"Urban, Rural & Social GP",Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P153541,EAP,China,"Urban, Rural & Social GP",Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P153541,EAP,China,"Urban, Rural & Social GP",Pipeline
@@ -2134,7 +2134,7 @@ Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human c
 Micro- level: Individuals/ Firms,Skills & Training,Job Creation,Entrepreneurs/self-employed,Yes,P154525,SAR,India,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Quality,Earnings/ livelihood,Yes,P154525,SAR,India,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P154525,SAR,India,Education GP,Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P154548,SAR,Nepal,Social Protection & Labor GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P154548,SAR,Nepal,Social Protection & Labor GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P154577,SAR,Bangladesh,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Creation,Entrepreneurs/self-employed,Yes,P154577,SAR,Bangladesh,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P154577,SAR,Bangladesh,Education GP,Pipeline
@@ -2179,7 +2179,7 @@ Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force partic
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Intermediate Outcomes,Access to/ working of product markets,Yes,P155110,ECA,Azerbaijan,"Urban, Rural & Social GP",Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P155110,ECA,Azerbaijan,"Urban, Rural & Social GP",Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P155110,ECA,Azerbaijan,"Urban, Rural & Social GP",Pipeline
-Macro-economic conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P155141,EAP,Philippines,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Public Administration and Governance,Job Access,Labor force participation,Yes,P155141,EAP,Philippines,Macro & Fiscal Management GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P155221,MNA,Iraq,"Urban, Rural & Social GP",Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P155221,MNA,Iraq,"Urban, Rural & Social GP",Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Youth,Yes,P155221,MNA,Iraq,"Urban, Rural & Social GP",Pipeline
@@ -2187,7 +2187,7 @@ Meso-level: Business Environment,Infrastructure-ICT,Intermediate Outcomes,Access
 Meso-level: Business Environment,Infrastructure-ICT,Intermediate Outcomes,Firm performance/ investment,Yes,P155235,LCR,Nicaragua,Transport and ICT GP,Pipeline
 Meso-level: Business Environment,Infrastructure-ICT,Job Creation,Job creation (by employers),Yes,P155235,LCR,Nicaragua,Transport and ICT GP,Pipeline
 Meso-level: Business Environment,Infrastructure-ICT,Job Creation,New enterprises,Yes,P155235,LCR,Nicaragua,Transport and ICT GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P155259,AFR,Cote d'Ivoire,Macro & Fiscal Management GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P155259,AFR,Cote d'Ivoire,Macro & Fiscal Management GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Firm performance/ investment,Yes,P155389,SAR,Bangladesh,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P155389,SAR,Bangladesh,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force participation,Yes,P155389,SAR,Bangladesh,Education GP,Pipeline
@@ -2195,20 +2195,20 @@ Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Ea
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P155452,SAR,Pakistan,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P155452,SAR,Pakistan,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P155541,EAP,Timor-Leste,Agriculture GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P155553,ECA,Georgia,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P155553,ECA,Georgia,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P155553,ECA,Georgia,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P155605,ECA,Albania,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P155605,ECA,Albania,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P155553,ECA,Georgia,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P155553,ECA,Georgia,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P155553,ECA,Georgia,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P155605,ECA,Albania,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P155605,ECA,Albania,Trade & Competitiveness GP,Pipeline
 Meso-level: Business Environment,Infrastructure-ICT,Intermediate Outcomes,Access to/ working of product markets,Yes,P155645,ECA,Burkina Faso,Transport and ICT GP,Pipeline
 Meso-level: Business Environment,Infrastructure-ICT,Intermediate Outcomes,Firm performance/ investment,Yes,P155645,ECA,Burkina Faso,Transport and ICT GP,Pipeline
 Meso-level: Business Environment,Infrastructure-ICT,Job Creation,Job creation (by employers),Yes,P155645,ECA,Burkina Faso,Transport and ICT GP,Pipeline
 Meso-level: Business Environment,Infrastructure-ICT,Job Creation,New enterprises,Yes,P155645,ECA,Burkina Faso,Transport and ICT GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P155963,SAR,Pakistan,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,Job creation (by employers),Yes,P155963,SAR,Pakistan,Trade & Competitiveness GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Intermediate Outcomes,Access to/ working of product markets,Yes,P156008,LCR,Panama,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P156008,LCR,Panama,Agriculture GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P156008,LCR,Panama,Agriculture GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P156019,SAR,Sri Lanka,Agriculture GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P156019,SAR,Sri Lanka,Agriculture GP,Pipeline
 Meso-level: Business Environment,Infrastructure- Transport,Intermediate Outcomes,Access to/ working of product markets,Yes,P156186,AFR,Senegal,Transport and ICT GP,Pipeline
 Meso-level: Business Environment,Infrastructure- Transport,Job Quality,Earnings/ livelihood,Yes,P156186,AFR,Senegal,Transport and ICT GP,Pipeline
 Meso-level: Business Environment,Infrastructure-ICT,Intermediate Outcomes,Access to/ working of product markets,Yes,P156250,LCR,Peru,Trade & Competitiveness GP,Pipeline
@@ -2224,9 +2224,9 @@ Micro- level: Individuals/ Firms,Skills & Training,Job Access,Labor force partic
 Micro- level: Individuals/ Firms,Skills & Training,Job Access,Youth,Yes,P156454,LCR,El Salvador,Social Protection & Labor GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Quality,Earnings/ livelihood,Yes,P156475,AFR,Ethiopia,Environment & Natural Resources GP,Pipeline
 Micro- level: Individuals/ Firms,Labor Programs- Livelihoods/ CDD,Job Access,Labor force participation,Yes,P156475,AFR,Ethiopia,Environment & Natural Resources GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P156492,AFR,Zambia,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P156492,AFR,Zambia,Trade & Competitiveness GP,Pipeline
-Macro-economic conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P156492,AFR,Zambia,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Access to/ working of product markets,Yes,P156492,AFR,Zambia,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Intermediate Outcomes,Firm performance/ investment,Yes,P156492,AFR,Zambia,Trade & Competitiveness GP,Pipeline
+Macro-level: Economic Conditions,Trade & Investment Policy,Job Creation,New enterprises,Yes,P156492,AFR,Zambia,Trade & Competitiveness GP,Pipeline
 Meso-level: Business Environment,Infrastructure-Energy,Intermediate Outcomes,Firm performance/ investment,Yes,P156584,ECA,Uzbekistan,Energy & Extractives GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Firm performance/ investment,Yes,P156746,LCR,Guyana,Education GP,Pipeline
 Micro- level: Individuals/ Firms,Skills & Training,Intermediate Outcomes,Human capital,Yes,P156746,LCR,Guyana,Education GP,Pipeline

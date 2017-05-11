@@ -37,6 +37,10 @@ names(projectData) <- c("id", "gP", "projType", "fY", "region", "country", "coun
 ##Filter those rows that are marked a yes (since we are only interested in the counts of yes for each cell)
 projectData <- projectData %>% 
         filter(!is.na(value))
+
+##Change Macro-economic conditions to Macro-level: Economic Conditions (so that it matches the template of the rest)
+projectData <- projectData %>% 
+        mutate(interventionType = ifelse(interventionType == "Macro-economic conditions", "Macro-level: Economic Conditions", interventionType))
 ```
 
 ##Variable checks

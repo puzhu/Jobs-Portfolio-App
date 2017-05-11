@@ -1,41 +1,98 @@
 
 
 #outerClabels{
-  height: 100px;
-  border: 2px solid blue
+  height: 60px;
+  /*border: 2px solid blue*/
 }
 #innerClabels{
-  height: 100px;
-  border: 2px solid green
+  height: 140px;
+  /*border: 2px solid green*/
 }
 #controls{
-  height: 200px;
-  border: 3px solid black
+  height: 140px;
+  /*border: 3px solid black*/
+}
+#country{
+  height: 70px;
+  border: 1px solid lightgrey;
+}
+#region{
+  height: 70px;
+  border: 1px solid lightgrey;
+}
+#GP{
+  height: 70px;
+  border: 1px solid lightgrey;
+}
+#moneyCount{
+  height: 70px;
+  border: 1px solid lightgrey;
+}
+
+#legendRow{
+  height:60px;
+}
+
+#legend{
+  height:60px;
+  /*border: 3px solid black*/
 }
 #outerRlabels{
-  height: 600px;
-  border: 2px solid blue;
+  height: 540px;
+  /*border: 2px solid blue;*/
   text-align: right;
-  /*
-  -ms-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  -webkit-transition: transform 10s;
-  transition: transform 1s;
-  */
-
 }
 #innerRlabels{
-  height: 600px;
-  border: 2px solid green;
+  height: 540px;
+  /*border: 2px solid green;*/
   text-align: center;
 }
-
 #heatmap{
-  height: 600px;
-  border: 1px dotted red;
+  height: 540px;
+  /*border: 1px dotted red;*/
 }
 
-.outerRowLabels{
-  text-align: right;
+.mainRowLabels{
+  cursor: pointer;
+  font-size: 14px;
+  fill: #0c3298;
+  -webkit-transition: font-size .5s, fill .5s, font-weight .5s;
+  transition: font-size .5s, fill .5s, font-weight .5s;
+}
+.mainRowLabels:hover{
+  font-weight: bold;
+  font-size: 16px;
+  fill: darkgreen;
+}
+.subRowLabels{
+  font-size: 12px;
+}
+
+.mainColLabels{
+  cursor: pointer;
+  font-size: 14px;
+  fill: #0c3298;
+  -webkit-transition: font-size .5s, fill .5s, font-weight .5s;
+  transition: font-size .5s, fill .5s, font-weight .5s;
+}
+.mainColLabels:hover{
+  font-weight: bold;
+  font-size: 16px;
+  fill: darkgreen;
+}
+.subColLabels{
+  font-size: 12px;
+}
+
+
+.tick line{
+  stroke: lightgrey;
+}
+path.domain{
+  stroke: none;
+}
+
+.legendMoused{
+  fill: white;
+  stroke: white;
 }
