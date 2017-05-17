@@ -103,6 +103,30 @@ To Dos: 1.
 These functions are directly linked to the current project
 #################################################
 */
+
+function generateDropDown(indicatorId, listName, defaultName, data, projectLimit) {
+	//generate the unique list of values.
+  var listVals = unique(data.map(function(d) { return d[listName]; })).sort()
+
+  //for each item in the list if the n projects is greater than the project limit then push
+  var listData = [{id: defaultName, text: defaultName}];
+  listVals.forEach(function(d) {
+
+    var nProjects = unique(data.filter(function(e) { return e[listName] === d; }).map(function (f) { return f.id; })).length;
+    // console.log(nProjects)
+    if(nProjects >= projectLimit){
+      listData.push({
+        id: d,
+        text: d
+      })
+    }
+  })
+  $(indicatorId).select2({
+    data: listData
+  })
+}
+
+
         //FUNCTIONS TO EXTRACT AND MANAGE LABEL STATES
         //These functions extract the list of labels given the inner and outer label names. The next step initializes these labels to false. FOllowed by functions to update the state of these labels in the event of clicks. The setting and updation is only necessary for the outer labels. There are two states for each outer row -expanded or collapsed. Expanded applies when the sub labels for that row are displayed. This would require the outer label for that row(s) to be positioned on the outer div while the other row(s) are still positioned inside but collapsed to the bottom/top. While collapsed applies when all the sub labels are collapsed, in which case the labels are all positioned in the middle of each of the inner rows.
 
@@ -363,7 +387,7 @@ function setSublabelColPosition(mainColPosData, colLabelTable, innerHeight){
         // DATA PROCESSING FUNCTIONS FOR INITIAL LOAD
 // Given a grid width, height, number of rows and columns generate a grid
 function gridData(rowState, colState, gridWidth, gridHeight, rowLabels, colLabels, chartData) {
-
+  // console.log(chartData)
   //Extract the number of labels based on whether it is expanded or no
   var allRows = [];
   rowState.forEach(function(d) {
@@ -474,6 +498,11 @@ function ready(error, dataAll) {
 }
 
 function draw(dataAll) {
+  //geerate all the dropdown lists
+  generateDropDown("#countryList", "country", "World", dataAll, 15)
+  generateDropDown("#regionList", "region", "World", dataAll, 15)
+  generateDropDown("#gpList", "gP", "World", dataAll, 15)
+
 
   /*
   #################################################
@@ -526,15 +555,11 @@ function draw(dataAll) {
   //mainColLabelState = setMainLabelState(mainColLabelState, "Intermediate Outcomes")
   //mainRowLabelState = setMainLabelState(mainRowLabelState, "Macro-level: Economic Conditions")
   //console.table(mainColLabelState)
-
-
-  drawRowLabels(mainRowLabelState, rowLabelTable)
-  drawColLabels( mainColLabelState, colLabelTable)
-
-
   var gridPosition = gridData(mainRowLabelState, mainColLabelState, heatmapWidth, heatmapHeight,rowLabelTable, colLabelTable, dataAll)
-  // gridData(rowState, colState, gridWidth, gridHeight, rowLabels, colLabels, chartData)
 
+  //draw all the elements
+  drawRowLabels(mainRowLabelState, rowLabelTable, dataAll)
+  drawColLabels( mainColLabelState, colLabelTable, dataAll)
   drawGrid(gridPosition)
 
 
@@ -545,7 +570,7 @@ function draw(dataAll) {
   SECTION 3: POSITIONING THE LABELS
   #################################################
   */
-  function drawColLabels(mainColState, colLabelTable){
+  function drawColLabels(mainColState, colLabelTable, currChartData){
     var innerColSVG = innerColChars.plotVar,
         outerColSVG = outerColChars.plotVar,
         innerHeight = innerColChars.height,
@@ -554,6 +579,8 @@ function draw(dataAll) {
 
     //draw the grid extension lines
     innerColSVG.selectAll('.innerLines').remove()
+    //remove existing elements
+    d3.selectAll(".subColLabels").remove()
 
     var data = []
     mainColPosData.forEach(function(d) {
@@ -636,17 +663,15 @@ function draw(dataAll) {
     }
 
     function onClickCols(d){
-      //remove existing elements
-      d3.selectAll(".subColLabels").remove()
 
       //update the state
       mainColLabelState = setMainLabelState(mainColLabelState, d.name)
       //console.log(mainRowLabelState)
       //run the draw labels function
-      drawColLabels( mainColState, colLabelTable)
+      drawColLabels( mainColState, colLabelTable, currChartData)
 
       //update the grid
-      gridPosition = gridData(mainRowLabelState, mainColLabelState, heatmapWidth, heatmapHeight, rowLabelTable, colLabelTable, dataAll)
+      gridPosition = gridData(mainRowLabelState, mainColLabelState, heatmapWidth, heatmapHeight, rowLabelTable, colLabelTable, currChartData)
 
       d3.selectAll('.grid').remove();
       drawGrid(gridPosition)
@@ -675,10 +700,11 @@ function draw(dataAll) {
 
 
   }
-  function drawRowLabels(mainRowLabelState, rowLabelTable){
+  function drawRowLabels(mainRowLabelState, rowLabelTable, currChartData){
     //console.table(mainRowLabelState)
     //remove existing elements
     d3.selectAll(".mainRowLabels").remove()
+    d3.selectAll(".subRowLabels").remove()
 
     var innerRowSVG = innerRowChars.plotVar,
         innerRowWidth = innerRowChars.width,
@@ -755,21 +781,18 @@ function draw(dataAll) {
         //.call(wrap, innerRowWidth)
 
       function onClickRows(d){
-        //remove existing elements
-        d3.selectAll(".subRowLabels").remove()
 
-        var clickedName = d.name
+        var clickedName = d.name;
         //update the state
         mainRowLabelState = setMainLabelState(mainRowLabelState, clickedName)
-        //console.log(mainRowLabelState)
+
         //run the draw labels function
-        //innerRowSVG.transition().duration(500)
-        drawRowLabels(mainRowLabelState, rowLabelTable)
+        drawRowLabels(mainRowLabelState, rowLabelTable, currChartData)
 
         //update the grid
-        gridPosition = gridData(mainRowLabelState, mainColLabelState, heatmapWidth, heatmapHeight, rowLabelTable, colLabelTable, dataAll)
+        gridPosition = gridData(mainRowLabelState, mainColLabelState, heatmapWidth, heatmapHeight, rowLabelTable, colLabelTable, currChartData)
 
-        d3.selectAll('.grid').remove();
+        d3.selectAll('.grid').remove(); //remove grid before redrawing
         drawGrid(gridPosition)
 
       }
@@ -815,7 +838,7 @@ function draw(dataAll) {
       .attr("ry", function(d) { return d.height * 0.05; })
       .attr("width", function(d) { return d.width; })
       .attr("height", function(d) { return d.height; })
-      .style('stroke-width', "1px")
+      .style('stroke-width', "2px")
       .style("stroke", "white")
       .on("mouseover", mouseOverGrid)
       .on("mouseout", mouseOutGrid);
@@ -903,8 +926,150 @@ function draw(dataAll) {
   }
 
 
+  /*
+  #################################################
+  SECTION 3: CREATE CONTROL EVENT LISTERNER
+  #################################################
+  */
+  var controlData;
+  $("#countryList").on('change', function(d) {
+    var currValue = this.value;
+    controlData = dataAll.filter(function(e) { return e.country === currValue; })
+
+    if(currValue === "World"){
+      //Create the row label lookup table
+      rowLabelTable = getLabelList(dataAll, outerRowName, innerRowName);
+
+      //Create the column label lookup table
+      colLabelTable = getLabelList(dataAll, outerColName, innerColName);;
+
+              //SET THE INITIAL STATE OF THE OUTER LABELS
+
+      mainRowLabelState = initializeMainLabelState(rowLabelTable) //creates the state data
+      mainColLabelState = initializeMainLabelState(colLabelTable)
+
+      gridPosition = gridData(mainRowLabelState, mainColLabelState, heatmapWidth, heatmapHeight,rowLabelTable, colLabelTable, dataAll)
+
+      //draw all the elements
+      drawRowLabels(mainRowLabelState, rowLabelTable, dataAll)
+      drawColLabels( mainColLabelState, colLabelTable, dataAll)
+      drawGrid(gridPosition)
+    } else {
+      //Create the row label lookup table
+      rowLabelTable = getLabelList(controlData, outerRowName, innerRowName);
+
+      //Create the column label lookup table
+      colLabelTable = getLabelList(controlData, outerColName, innerColName);;
+
+      //SET THE INITIAL STATE OF THE OUTER LABELS
+
+      mainRowLabelState = initializeMainLabelState(rowLabelTable) //creates the state data
+      mainColLabelState = initializeMainLabelState(colLabelTable)
+
+
+      gridPosition = gridData(mainRowLabelState, mainColLabelState, heatmapWidth, heatmapHeight,rowLabelTable, colLabelTable, controlData)
+      console.log(gridPosition)
+      //draw all the elements
+      drawRowLabels(mainRowLabelState, rowLabelTable, controlData)
+      drawColLabels( mainColLabelState, colLabelTable, controlData)
+      drawGrid(gridPosition)
+    }
+
+
+  })
+
+  $("#regionList").on('change', function(d) {
+    var currValue = this.value;
+    controlData = dataAll.filter(function(e) { return e.region === currValue; })
+
+    if(currValue === "World"){
+      //Create the row label lookup table
+      rowLabelTable = getLabelList(dataAll, outerRowName, innerRowName);
+
+      //Create the column label lookup table
+      colLabelTable = getLabelList(dataAll, outerColName, innerColName);;
+
+              //SET THE INITIAL STATE OF THE OUTER LABELS
+
+      mainRowLabelState = initializeMainLabelState(rowLabelTable) //creates the state data
+      mainColLabelState = initializeMainLabelState(colLabelTable)
+
+      gridPosition = gridData(mainRowLabelState, mainColLabelState, heatmapWidth, heatmapHeight,rowLabelTable, colLabelTable, dataAll)
+
+      //draw all the elements
+      drawRowLabels(mainRowLabelState, rowLabelTable, dataAll)
+      drawColLabels( mainColLabelState, colLabelTable, dataAll)
+      drawGrid(gridPosition)
+    } else {
+      //Create the row label lookup table
+      rowLabelTable = getLabelList(controlData, outerRowName, innerRowName);
+
+      //Create the column label lookup table
+      colLabelTable = getLabelList(controlData, outerColName, innerColName);;
+
+      //SET THE INITIAL STATE OF THE OUTER LABELS
+
+      mainRowLabelState = initializeMainLabelState(rowLabelTable) //creates the state data
+      mainColLabelState = initializeMainLabelState(colLabelTable)
+
+
+      gridPosition = gridData(mainRowLabelState, mainColLabelState, heatmapWidth, heatmapHeight,rowLabelTable, colLabelTable, controlData)
+      console.log(gridPosition)
+      //draw all the elements
+      drawRowLabels(mainRowLabelState, rowLabelTable, controlData)
+      drawColLabels( mainColLabelState, colLabelTable, controlData)
+      drawGrid(gridPosition)
+    }
+
+
+  })
+
+  $("#gpList").on('change', function(d) {
+    var currValue = this.value;
+    controlData = dataAll.filter(function(e) { return e.gP === currValue; })
+
+    if(currValue === "World"){
+      //Create the row label lookup table
+      rowLabelTable = getLabelList(dataAll, outerRowName, innerRowName);
+
+      //Create the column label lookup table
+      colLabelTable = getLabelList(dataAll, outerColName, innerColName);;
+
+              //SET THE INITIAL STATE OF THE OUTER LABELS
+
+      mainRowLabelState = initializeMainLabelState(rowLabelTable) //creates the state data
+      mainColLabelState = initializeMainLabelState(colLabelTable)
+
+      gridPosition = gridData(mainRowLabelState, mainColLabelState, heatmapWidth, heatmapHeight,rowLabelTable, colLabelTable, dataAll)
+
+      //draw all the elements
+      drawRowLabels(mainRowLabelState, rowLabelTable, dataAll)
+      drawColLabels( mainColLabelState, colLabelTable, dataAll)
+      drawGrid(gridPosition)
+    } else {
+      //Create the row label lookup table
+      rowLabelTable = getLabelList(controlData, outerRowName, innerRowName);
+
+      //Create the column label lookup table
+      colLabelTable = getLabelList(controlData, outerColName, innerColName);;
+
+      //SET THE INITIAL STATE OF THE OUTER LABELS
+
+      mainRowLabelState = initializeMainLabelState(rowLabelTable) //creates the state data
+      mainColLabelState = initializeMainLabelState(colLabelTable)
+
+
+      gridPosition = gridData(mainRowLabelState, mainColLabelState, heatmapWidth, heatmapHeight,rowLabelTable, colLabelTable, controlData)
+      console.log(gridPosition)
+      //draw all the elements
+      drawRowLabels(mainRowLabelState, rowLabelTable, controlData)
+      drawColLabels( mainColLabelState, colLabelTable, controlData)
+      drawGrid(gridPosition)
+    }
+
+
+  })
 
 
 
-
-  }
+}
