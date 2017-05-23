@@ -901,7 +901,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
         .tickSize(-legendHeight))
       .attr("text-anchor", null)
       .selectAll("text")
-      .attr("x", -10)
+      .attr("x", -5)
 
     var markerText = heatmapSVG.append('text')
       .attr("class", "markerText")
