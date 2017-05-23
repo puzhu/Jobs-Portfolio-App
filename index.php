@@ -32,58 +32,43 @@ header('X-Content-Type-Options: nosniff'); //Prevent MIME types security risk
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum lorem velit, sed convallis lectus rhoncus sit amet. Proin ut egestas diam. Nullam mi odio, maximus accumsan lacus at, dapibus auctor purus. Vivamus volutpat ante pulvinar neque placerat maximus. Cras malesuada leo eget rutrum lacinia.
       </p>
     </div>
-    <div class="row">
-      <div class="col-xs-4">
-        <div class="row" id="controls">
-          <div class="row">
-            <div class="col-xs-6" id="country">
-              <p>Select Country</p>
-              <select id="countryList" style="width: 95%">
-                <option value="World" selected="selected">World</option>
-              </select>
-            </div>
-            <div class="col-xs-6" id="GP">
-              <p>GP List</p>
-              <select id="gpList" style="width: 95%">
-                <option value="World" selected="selected">World</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-6" id="region">
-              <p>Region List</p>
-              <select id="regionList" style="width: 95%">
-                <option value="World" selected="selected">World</option>
-              </select>
-            </div>
-            <div class="col-xs-6" id="moneyCount">
-              <p>Money/Count Switch</p>
-              <div class="row text-center">
-                <label class="switch">
-                  <input type="checkbox" id="moneyCountSwitch">
-                  <div class="slider round"></div>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row" id="legendRow">
-          <div class="col-xs-6" id="legendText">
-            <p></p>
-          </div>
-          <div class="col-xs-6" id="legend"></div>
+    <div class="row" id="controls">
+      <div class="col-xs-2 text-center" id="country">
+        <p>Select Country</p>
+        <select id="countryList" style="width: 95%">
+          <option value="World" selected="selected">World</option>
+        </select>
+      </div>
+      <div class="col-xs-2 text-center" id="GP">
+        <p>GP List</p>
+        <select id="gpList" style="width: 95%">
+          <option value="All GPs" selected="selected">All GPs</option>
+        </select>
+      </div>
+      <div class="col-xs-2 text-center" id="region">
+        <p>Region List</p>
+        <select id="regionList" style="width: 95%">
+          <option value="World" selected="selected">World</option>
+        </select>
+      </div>
+      <div class="col-xs-2 text-center" id="moneyCount">
+        <p>Money/Count</p>
+        <div class="row">
+          <label class="switch">
+            <input type="checkbox" id="moneyCountSwitch">
+            <div class="slider round"></div>
+          </label>
         </div>
       </div>
-      <div class="col-xs-8">
-        <div class="row" id="outerClabels"></div>
-        <div class="row" id="innerClabels"></div>
+      <div class="col-xs-2 saveButtons text-center">
+        <button class="btn btn-sm btn-default" id="downloadButton" style="width: 90%" onclick="window.exportData()"><i class="fa fa-floppy-o" aria-hidden="true"></i> Download Data</button>
+      </div>
+      <div class="col-xs-2 saveButtons text-center">
+        <button class="btn btn-sm btn-default" id="saveChartButton" style="width: 90%"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save Chart</button>
       </div>
     </div>
-    <div class="row">
-      <div class="col-xs-1" id="outerRlabels"></div>
-      <div class="col-xs-3" id="innerRlabels"></div>
-      <div class="col-xs-8" id="heatmap"></div>
-    </div>
+
+    <div class="row" id="heatmap"></div>
 
   </div>
 
@@ -94,7 +79,9 @@ header('X-Content-Type-Options: nosniff'); //Prevent MIME types security risk
 
   <script src="libs/bootstrap/js/bootstrap.min.js"></script>
   <script src="libs/d3.min.js"></script>
-  <script src="libs/d3-tool-tip.js"></script>
+  <!-- <script src="libs/d3-tool-tip.js"></script> -->
+  <script src="libs/saveSvgAsPng/saveSvgAsPng.js"></script>
+  <script src="libs/alasql.min.js"></script>
 	<script src="scripts/main.js"></script>
 </body>
 </html>
