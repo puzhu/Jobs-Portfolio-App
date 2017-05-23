@@ -7,6 +7,10 @@ output:
 ##Summary
 The data relevant to the portfolio visualisation was copied from the excel file that was sent by Vinay into a .csv. This file is loaded in this section to create the final dataset.
 
+The initial version of this file used the data from the first framework model. This was changed towards the end. 
+
+The current file is set up for the new dataset. In addition, the file also includes an ordering table. This is used to create fixed labels instead of generating them from the data. Eventually, the final format created here will be used as the template to create the dataset for the App.
+
 ##Loading the data
 The data pre-processing steps are as follows
 
@@ -18,29 +22,25 @@ The data pre-processing steps are as follows
 6. Filter out the rows with relevant values (i.e. the categories marked "yes")
 
 ```{r, message=FALSE}
-library(tidyverse);
 rm(list = ls())
+library(tidyverse); library(readxl)
 
-##Load the data and select vars of interest
-projectData <- read_csv("raw data/jobsData.csv") %>% 
-        select(Proj.ID, 4, Proj.Type, Proj.FY, Proj.Region, Proj.Country, 10, Proj.Product_Line, Proj.Status, 227:243) 
+##Load the excel file with the data
+appData <- read_excel("raw data/V7_Jobs_M-E_Portfolio_Outputs_All_Vismay_CF Plus Keywords_For Visualization_05-17-17.xlsx", sheet = 3, skip = 1) %>% 
+        select(1:23, 230:242)
 
-projectData <- projectData %>% 
-        filter(Proj.Status != "Closed" & !is.na(Intervention)) %>% ##Filter out projects that miss intervention tags and those that are either active or in the pipeline
-        gather(key = jobsName, value = value, 11:26) %>% ##convert to long format
-        left_join(., read_csv("raw data/interventionTypes.csv"), by = c("Intervention")) %>% 
-        left_join(., read_csv("raw data/jobTypes.csv"), by = c("jobsName"))
+rowLabelData <- read_csv("raw data/interventionTypes.csv")
 
-## Change var names
-names(projectData) <- c("id", "gP", "projType", "fY", "region", "country", "countryType", "productLine", "status", "intervention", "jobsName", "value", "interventionType", "jobsType")
+colLabelData <- read_csv("raw data/jobTypes.csv")
 
-##Filter those rows that are marked a yes (since we are only interested in the counts of yes for each cell)
-projectData <- projectData %>% 
-        filter(!is.na(value))
+appData <- appData %>% 
+        filter(Proj.Status != "Closed" & !is.na(Intervention)) %>% 
+        gather(key = subColLabel, value = value, 25:36) %>% 
+        filter(!is.na(value)) %>% 
+        left_join(., colLabelData, by = c("subColLabel" = "subColLabel")) %>% 
+        left_join(., rowLabelData, by = c("Intervention" = "subRowLabel"))
 
-##Change Macro-economic conditions to Macro-level: Economic Conditions (so that it matches the template of the rest)
-projectData <- projectData %>% 
-        mutate(interventionType = ifelse(interventionType == "Macro-economic conditions", "Macro-level: Economic Conditions", interventionType))
+names(appData) <- c("projId", "projName", "cluster", "gP", "projType", "projFY", "projApproval", "projRegion", "projCountry", "countryClassification", "IBRDCommit", "IDACommit", "totalCommit", "projProductLineKey", "projProductLine", "projOutputKey", "projOutputType", "projStatus", "projContribGPs", "projCCSA", "objective", "description", "projURL", "subRowLabel", "subColLabel", "value", "mainColLabel", "mainRowLabel")
 ```
 
 ##Variable checks
@@ -50,10 +50,36 @@ All the variable values were checked to make sure that they were consistent. THe
 Here I further narrow the data to select only those variables that are being used in the current iteration of the app. This list can be widened when we need to.
 
 ```{r}
-projectData %>% 
-        select(interventionType, intervention, jobsType, jobsName, value, id, region, country, gP, status) %>% 
-        arrange(id) %>% 
-        write_csv(., "../data/projectData.csv")
+appData <- appData %>%
+        arrange(projId) %>% 
+        ungroup() %>%
+        mutate(subColLabel = ifelse(subColLabel == "Entrepreneurs/self-employed", "Entrepreneurs/ self-employed", subColLabel))
+
+write_csv(appData, "../data/appData.csv")
+
+```
+
+```{r}
+##Load the data and select vars of interest
+# projectData <- read_csv("raw data/jobsData.csv") %>% 
+#         select(Proj.ID, 4, Proj.Type, Proj.FY, Proj.Region, Proj.Country, 10, Proj.Product_Line, Proj.Status, 227:243) 
+# 
+# projectData <- projectData %>% 
+#         filter(Proj.Status != "Closed" & !is.na(Intervention)) %>% ##Filter out projects that miss intervention tags and those that are either active or in the pipeline
+#         gather(key = jobsName, value = value, 11:26) %>% ##convert to long format
+#         left_join(., read_csv("raw data/interventionTypes.csv"), by = c("Intervention")) %>% 
+#         left_join(., read_csv("raw data/jobTypes.csv"), by = c("jobsName"))
+# 
+# ## Change var names
+# names(projectData) <- c("id", "gP", "projType", "fY", "region", "country", "countryType", "productLine", "status", "intervention", "jobsName", "value", "interventionType", "jobsType")
+
+##Filter those rows that are marked a yes (since we are only interested in the counts of yes for each cell)
+# projectData <- projectData %>% 
+#         filter(!is.na(value))
+# 
+# ##Change Macro-economic conditions to Macro-level: Economic Conditions (so that it matches the template of the rest)
+# projectData <- projectData %>% 
+#         mutate(interventionType = ifelse(interventionType == "Macro-economic conditions", "Macro-level: Economic Conditions", interventionType))
 
 ```
 

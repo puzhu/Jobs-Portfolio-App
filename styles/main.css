@@ -1,56 +1,17 @@
 
-
-#outerClabels{
-  height: 60px;
-  /*border: 2px solid blue*/
-}
-#innerClabels{
-  height: 140px;
-  /*border: 2px solid green*/
-}
 #controls{
-  height: 140px;
+  height: 70px;
   /*border: 3px solid black*/
-}
-#country{
-  height: 70px;
-  /*border: .5px solid lightgrey;*/
-}
-#region{
-  height: 70px;
-  /*border: .5px solid lightgrey;*/
-}
-#GP{
-  height: 70px;
-  /*border: .5px solid lightgrey;*/
-}
-#moneyCount{
-  height: 70px;
-  /*border: .5px solid lightgrey;*/
-}
-
-#legendRow{
-  height:60px;
 }
 
 #legend{
-  height:60px;
-  /*border: 3px solid black*/
+  height: 70px;
 }
-#outerRlabels{
-  height: 540px;
-  /*border: 2px solid blue;*/
-  text-align: right;
-}
-#innerRlabels{
-  height: 540px;
-  /*border: 2px solid green;*/
-  text-align: center;
-}
+
 #heatmap{
   /*width: 100%;*/
   /*height: auto;*/
-  height: 540px;
+  height: 640px;
   /*border: 1px dotted red;*/
 }
 
@@ -68,6 +29,9 @@
 }
 .subRowLabels{
   font-size: 12px;
+}
+.saveButtons{
+  margin-top: 30px;
 }
 
 .mainColLabels{
@@ -89,6 +53,7 @@
 
 .tick line{
   stroke: lightgrey;
+  stroke-width: 1px;
 }
 path.domain{
   stroke: none;

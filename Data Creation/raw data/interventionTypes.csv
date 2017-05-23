@@ -1,19 +1,18 @@
-Intervention,interventionType
-Public Administration and Governance,Macro-economic conditions
-Taxation/Fiscal Policy,Macro-economic conditions
-Trade & Investment Policy,Macro-economic conditions
-Labor Policies,Meso-level: Business Environment
-Business Regulations,Meso-level: Business Environment
-Infrastructure- Transport,Meso-level: Business Environment
-Infrastructure-ICT,Meso-level: Business Environment
-Infrastructure-Energy,Meso-level: Business Environment
-Infrastructure-Irrigation/Water,Meso-level: Business Environment
-Spatial Development,Meso-level: Business Environment
-Productive Assets- Land,Micro- level: Individuals/ Firms
-Productive Assets-Finance/Financial System,Micro- level: Individuals/ Firms
-Productive Assets-MSME/ Entrepreneurship,Micro- level: Individuals/ Firms
-Labor Programs- Public Employment,Micro- level: Individuals/ Firms
-Labor Programs- Wage Subsidies,Micro- level: Individuals/ Firms
-Labor Programs-Public Works,Micro- level: Individuals/ Firms
-Labor Programs- Livelihoods/ CDD,Micro- level: Individuals/ Firms
-Skills & Training,Micro- level: Individuals/ Firms
+mainRowLabel,subRowLabel
+Macro and Regulatory Policies,Public Administration and Governance
+Macro and Regulatory Policies,Taxation/Fiscal Policy
+Macro and Regulatory Policies,Trade & Investment Policy
+Macro and Regulatory Policies,Business Regulations
+Sectoral and Regional Policies,Access to Finance
+Sectoral and Regional Policies,MSME/ Entrepreneurship
+Sectoral and Regional Policies,Transport/ Logistics
+Sectoral and Regional Policies,ICT
+Sectoral and Regional Policies,Energy/ Mining
+Sectoral and Regional Policies,Irrigation/Water
+Sectoral and Regional Policies,Spatial Development
+Labor Policies,Labor Regulations
+Labor Policies,Public Employment Services
+Labor Policies,Wage Subsidies
+Labor Policies,Public Works
+Labor Policies,Livelihoods/ CDD
+Labor Policies,Skills & Training
