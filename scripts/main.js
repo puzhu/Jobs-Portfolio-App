@@ -361,7 +361,7 @@ function setSublabelColPosition(mainColPosData, colLabelTable, innerLabelPos){
         subLabel: f.subLabel,
         mainLabel: d.name,
         x: xIncrement < rotateLimit ? -yPos : xPos + xIncrement/2,
-        y: xIncrement < rotateLimit ?  xPos + xIncrement/(d3.max([2, f.subLabel.length * 0.08])) :  yPos - f.subLabel.length * 1.25,
+        y: xIncrement < rotateLimit ?  xPos + xIncrement/(d3.max([2, f.subLabel.length * 0.08])) :  yPos - d3.min([12, f.subLabel.length * 1.2]),
         rotate: xIncrement < rotateLimit,
         xIncrement: xIncrement
       })
@@ -559,7 +559,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
   function drawColLabels(mainColState, currChartData){
     //set the label positions based on current state of the column labels
     var mainColPosData = setMainColLabelPosition(mainColState, gridWidth, innerColHeight, outerColHeight, colLabelData, rowLabelWidth)
-    console.table(mainColPosData)
+
     var wrapWidth = d3.max(mainColPosData, function(d) {return d.colWidth; })
     //remove existing elements
     heatmapSVG.selectAll(".subColLabels").remove()
@@ -617,6 +617,8 @@ function draw(dataAll, rowLabelData, colLabelData) {
 
         //Draw the inner labels
       var innerLabelPositions = setSublabelColPosition(mainColPosData, colLabelData, colLabelHeight)
+      var rotateLabel = innerLabelPositions[0].rotate;
+      var subWrapWidth = rotateLabel ? innerColHeight : d3.max(innerLabelPositions, function(d) { return d.xIncrement; });
 
       var innerColSubLabels = heatmapSVG.append('g').selectAll(".subColLabels")
         .data(innerLabelPositions)
@@ -628,7 +630,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
         .attr('class', 'subColLabels')
         .text(function(d) {return d.subLabel})
         .attr("transform", function(d) {return d.rotate ? "rotate(-90)" : "rotate(0)"; })
-        .call(wrap, innerColHeight * 0.8)
+        .call(wrap, subWrapWidth * 0.9)
 
     } else {
       var innerColLabels = heatmapSVG.append('g').selectAll(".mainColLabels")
