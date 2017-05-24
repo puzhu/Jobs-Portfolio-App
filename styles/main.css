@@ -1,34 +1,35 @@
 
 #controls{
-  height: 70px;
+  /*height: 70px;*/
+  /*border: 3px solid black*/
+
+}
+
+#charts{
   /*border: 3px solid black*/
 }
 
-#legend{
-  height: 70px;
-}
-
 #heatmap{
-  /*width: 100%;*/
+  width: 100%;
   /*height: auto;*/
-  height: 640px;
+  /*height: 720px;*/
   /*border: 1px dotted red;*/
 }
 
 .mainRowLabels{
   cursor: pointer;
-  font-size: 14px;
+  font-size: 1em;
   fill: #0c3298;
   -webkit-transition: font-size .5s, fill .5s, font-weight .5s;
   transition: font-size .5s, fill .5s, font-weight .5s;
 }
 .mainRowLabels:hover{
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.2em;
   fill: darkgreen;
 }
 .subRowLabels{
-  font-size: 12px;
+  font-size: 0.8em;
 }
 .saveButtons{
   margin-top: 30px;
@@ -36,18 +37,18 @@
 
 .mainColLabels{
   cursor: pointer;
-  font-size: 14px;
+  font-size: 1em;
   fill: #0c3298;
   -webkit-transition: font-size .5s, fill .5s, font-weight .5s;
   transition: font-size .5s, fill .5s, font-weight .5s;
 }
 .mainColLabels:hover{
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.2em;
   fill: darkgreen;
 }
 .subColLabels{
-  font-size: 12px;
+  font-size: 0.8em;
 }
 
 

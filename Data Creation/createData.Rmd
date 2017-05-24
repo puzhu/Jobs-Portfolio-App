@@ -26,21 +26,34 @@ rm(list = ls())
 library(tidyverse); library(readxl)
 
 ##Load the excel file with the data
-appData <- read_excel("raw data/V7_Jobs_M-E_Portfolio_Outputs_All_Vismay_CF Plus Keywords_For Visualization_05-17-17.xlsx", sheet = 3, skip = 1) %>% 
-        select(1:23, 230:242)
-
 rowLabelData <- read_csv("raw data/interventionTypes.csv")
-
 colLabelData <- read_csv("raw data/jobTypes.csv")
+appData <- read_excel("raw data/V8_Jobs_M-E_Portfolio_Outputs_All_Vismay_CF Plus Keywords_For Visualization_05-23-17.xlsx", sheet = 3, skip = 2)
 
-appData <- appData %>% 
+##Get the count and money data in long format
+countData <- appData %>% 
+        select(1:23, 230:242) %>% 
         filter(Proj.Status != "Closed" & !is.na(Intervention)) %>% 
-        gather(key = subColLabel, value = value, 25:36) %>% 
-        filter(!is.na(value)) %>% 
-        left_join(., colLabelData, by = c("subColLabel" = "subColLabel")) %>% 
-        left_join(., rowLabelData, by = c("Intervention" = "subRowLabel"))
+        gather(key = subColLabel, value = count, 25:36) %>% 
+        filter(!is.na(count)) %>% 
+        mutate(count = 1)
+        
+moneyData <- appData %>% 
+        select(1:23, 230, 264:275) %>% 
+        filter(Proj.Status != "Closed" & !is.na(Intervention)) %>% 
+        gather(key = subColLabel, value = money, 25:36) %>% 
+        rowwise() %>% 
+        mutate(subColLabel = str_replace(subColLabel, "__2", "")) %>% 
+        select(Proj.ID, Intervention, subColLabel, money)
 
-names(appData) <- c("projId", "projName", "cluster", "gP", "projType", "projFY", "projApproval", "projRegion", "projCountry", "countryClassification", "IBRDCommit", "IDACommit", "totalCommit", "projProductLineKey", "projProductLine", "projOutputKey", "projOutputType", "projStatus", "projContribGPs", "projCCSA", "objective", "description", "projURL", "subRowLabel", "subColLabel", "value", "mainColLabel", "mainRowLabel")
+appData <- left_join(countData, moneyData, by = c("Proj.ID", "Intervention", "subColLabel")) %>% 
+        left_join(., colLabelData, by = c("subColLabel" = "subColLabel")) %>% 
+        left_join(., rowLabelData, by = c("Intervention" = "subRowLabel")) %>% 
+        mutate(money = ifelse(is.na(money), 0, money))
+
+
+
+names(appData) <- c("projId", "projName", "cluster", "gP", "projType", "projFY", "projApproval", "projRegion", "projCountry", "countryClassification", "IBRDCommit", "IDACommit", "totalCommit", "projProductLineKey", "projProductLine", "projOutputKey", "projOutputType", "projStatus", "projContribGPs", "projCCSA", "objective", "description", "projURL", "subRowLabel", "subColLabel", "count", "money","mainColLabel", "mainRowLabel")
 ```
 
 ##Variable checks
@@ -57,6 +70,7 @@ appData <- appData %>%
 
 write_csv(appData, "../data/appData.csv")
 
+summary(appData$money)
 ```
 
 ```{r}

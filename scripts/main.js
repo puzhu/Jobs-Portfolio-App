@@ -70,7 +70,8 @@ function wrap(text, width) {
     while (word = words.pop()) {
       line.push(word);
       tspan.text(line.join(" "));
-      if (tspan.node().getComputedTextLength() > width) {
+      if (tspan.node().getComputedTextLength() > width && line.length > 1) {
+
         line.pop();
         tspan.text(line.join(" "));
         line = [word];
@@ -132,27 +133,6 @@ function generateDropDown(indicatorId, listName, defaultName, data, projectLimit
         //FUNCTIONS TO EXTRACT AND MANAGE LABEL STATES
         //These functions extract the list of labels given the inner and outer label names. The next step initializes these labels to false. FOllowed by functions to update the state of these labels in the event of clicks. The setting and updation is only necessary for the outer labels. There are two states for each outer row -expanded or collapsed. Expanded applies when the sub labels for that row are displayed. This would require the outer label for that row(s) to be positioned on the outer div while the other row(s) are still positioned inside but collapsed to the bottom/top. While collapsed applies when all the sub labels are collapsed, in which case the labels are all positioned in the middle of each of the inner rows.
 
-// This function takes the names of the inner and outer labels and creates a table
-// function getLabelList(labelData, mainLabelName, subLabelName){
-//   combos = unique(labelData.map(function(d) {
-//     var tempArray = [d[mainLabelName], d[subLabelName]]
-//     return tempArray.join(" | ");
-//   }));
-//
-//   var finalTable = [];
-//
-//   combos.forEach(function(d) {
-//     splitString = d.split(" | ")
-//     finalTable.push({
-//       mainLabel : splitString[0],
-//       subLabel : splitString[1]
-//     });
-//   });
-//   return finalTable.sort(function(a, b) {
-//     return (a.mainLabel > b.mainLabel) ? 1 : ((b.mainLabel > a.mainLabel) ? -1 : 0);
-//   })
-// }
-
 //Funciton to initialize the state of the outer labels
 function initializeMainLabelState(labels){
   var mainLabels = unique(labels.map(function(d){return d.mainLabel}));
@@ -180,7 +160,7 @@ function setMainLabelState(mainLabelState, mainLabel){
           //FUNCTION TO SPECIFY THE POSITIONIN OF LABEL.
           //We need separate functions for column and row labels, these functions take the current state of the labels and use them to position the labels on the canvas. The outer labels are positioned based on the available space and the number of sub labels that they have under them.
 
-var unExpandedSize = 20;
+var unExpandedSize = 30;
 //This function positions the outer row labels
 function setMainRowLabePosition(mainLabelState, gridHeight, innerRowWidth, outerRowWidth, rowLabelTable, colLabelHeight){
   //the first task is to find the number of expanded labels
@@ -212,7 +192,7 @@ function setMainRowLabePosition(mainLabelState, gridHeight, innerRowWidth, outer
       posData.push({
         name: d.mainLabel,
         x: xPos,
-        y: yPos + incrementHeight/2,
+        y: yPos + incrementHeight/1.8,
         expand: d.expand,
         yStart: yPos,
         rowHeight: incrementHeight
@@ -228,7 +208,7 @@ function setMainRowLabePosition(mainLabelState, gridHeight, innerRowWidth, outer
           posData.push({
             name: d.mainLabel,
             x: xPos,
-            y: yPos + unExpandedRowHeight, //place in the middle of the space for unexpanded row
+            y: yPos + unExpandedRowHeight/1.2, //place in the middle of the space for unexpanded row
             expand: d.expand,
             yStart: yPos,
             rowHeight: incrementHeight
@@ -265,13 +245,14 @@ function setSubRowLabelPosition(mainRowLabelPosData, rowLabelTable, innerRowPosi
 
     var yIncrement = d.rowHeight/innerRowLabels.length;
 
+
     //loop through the inner labels
     innerRowLabels.forEach(function(f){
       innerPosData.push({
         subLabel: f.subLabel,
         mainLabel: d.name,
         x: xPos,
-        y: yPos + yIncrement/2
+        y: yPos + yIncrement/2 + 5
       })
       //update the y position
       yPos += yIncrement;
@@ -304,7 +285,7 @@ function setMainColLabelPosition(mainColState, gridWidth, innerHeight, outerHeig
   //intialize all the positioning variables
   var unExpandedColWidth = unExpandedSize;
   var xPos = rowLabelWidth;
-  var yPos = (outerHeight + innerHeight) * 0.9;
+  var yPos = (outerHeight + innerHeight) * 0.85;
   var incrementWidth = 0;
   var posData = []
 
@@ -329,15 +310,16 @@ function setMainColLabelPosition(mainColState, gridWidth, innerHeight, outerHeig
       if(!d.expand){ //and if the expand is false, swap x and y so that we can rotate the text
         posData.push({
           name: d.mainLabel,
-          y: xPos + unExpandedColWidth/2,
+          y: xPos + unExpandedColWidth/d3.max([2, d.mainLabel.length * 0.2]),
           x: -yPos, //place in the middle of the space for unexpanded row
           expand: d.expand,
           xStart: xPos,
-          colWidth: incrementWidth
+          colWidth: unExpandedColWidth
         })
 
         xPos += unExpandedColWidth //increment by the space for the unexpanded row
       } else { //if the row needs to be expanded
+        // console.log(incrementWidth/d.mainLabel.length)
         posData.push({
           name: d.mainLabel,
           x: xPos + incrementWidth/2,
@@ -372,7 +354,6 @@ function setSublabelColPosition(mainColPosData, colLabelTable, innerLabelPos){
 
     var xIncrement = (d.colWidth - (2 * padding))/subColLabels.length;
 
-
     //loop through the inner labels to set positions
     subColLabels.forEach(function(f) {
 
@@ -380,7 +361,7 @@ function setSublabelColPosition(mainColPosData, colLabelTable, innerLabelPos){
         subLabel: f.subLabel,
         mainLabel: d.name,
         x: xIncrement < rotateLimit ? -yPos : xPos + xIncrement/2,
-        y: xIncrement < rotateLimit ?  xPos + xIncrement/2 - f.subLabel.length * 0.4 :  yPos - f.subLabel.length * 1.25,
+        y: xIncrement < rotateLimit ?  xPos + xIncrement/(d3.max([2, f.subLabel.length * 0.08])) :  yPos - f.subLabel.length * 1.25,
         rotate: xIncrement < rotateLimit,
         xIncrement: xIncrement
       })
@@ -394,7 +375,7 @@ function setSublabelColPosition(mainColPosData, colLabelTable, innerLabelPos){
 }
         // DATA PROCESSING FUNCTIONS FOR INITIAL LOAD
 // Given a grid width, height, number of rows and columns generate a grid
-function gridData(rowState, colState, gridWidth, gridHeight, rowLabels, colLabels, chartData, rowLabelWidth, colLabelHeight) {
+function gridData(rowState, colState, gridWidth, gridHeight, rowLabels, colLabels, chartData, rowLabelWidth, colLabelHeight, count) {
 
   //Extract the number of labels based on whether it is expanded or no
   var allRows = [];
@@ -466,7 +447,7 @@ function gridData(rowState, colState, gridWidth, gridHeight, rowLabels, colLabel
       //Fill data
       rowName = (d.labelType === "main") ? "mainRowLabel" : "subRowLabel";//identify the row variable name
       colName = (e.labelType === "main") ? "mainColLabel" : "subColLabel";
-      fillData = (height === unExpandedSize || width === unExpandedSize) ? 0 : chartData.filter(function(f) {return f[rowName] === d.rowName && f[colName] === e.colName; }).length;
+      fillData = (height === unExpandedSize || width === unExpandedSize) ? 0 : chartData.filter(function(f) {return f[rowName] === d.rowName && f[colName] === e.colName; }).reduce(function(prev, g) { return count ? prev + deString(g.count) : prev + deString(g.money); }, 0);
 
       data.push({
         x: xPos,
@@ -475,7 +456,9 @@ function gridData(rowState, colState, gridWidth, gridHeight, rowLabels, colLabel
         height: height,
         fill: fillData,
         mainRowName: d.mainRowName,
-        mainColName: e.mainColName
+        mainColName: e.mainColName,
+        rowLabel: d.rowName,
+        colLabel: e.colName
       });
 
       //increment the width
@@ -508,6 +491,7 @@ function ready(error, dataAll, rowLabelData, colLabelData) {
 }
 
 function draw(dataAll, rowLabelData, colLabelData) {
+
   // console.log(rowLabelData)
   //geerate all the dropdown lists
   generateDropDown("#countryList", "projCountry", "World", dataAll, 15)
@@ -524,27 +508,25 @@ function draw(dataAll, rowLabelData, colLabelData) {
   */
 
   // var legendChars = createSVG('#legend', margin = {top: 0, right: 15, bottom: 0, left: 5}, padding = {top: 0, right: 0, bottom: 0, left: 0})
-  var heatmapChars = createSVG('#heatmap', margin = {top: 0, right: 0, bottom: 0, left: 0}, padding = {top: 0, right: 0, bottom: 0, left: 0}),
+  var heatmapChars = createSVG('#heatmap', margin = {top: 10, right: 15, bottom: 15, left: 0}, padding = {top: 0, right: 0, bottom: 0, left: 0}),
       heatmapWidth = heatmapChars.width,
       heatmapHeight = heatmapChars.height,
       heatmapSVG = heatmapChars.plotVar.attr("id", "heatmapSVG"),
       xHeatmapScale = heatmapChars.xScale,
       yHeatmapScale = heatmapChars.yScale;
 
-  var legendSVG = heatmapSVG.append('g')
 
-  var innerRowWidth = 220,
-      outerRowWidth = 100,
+  var innerRowWidth = d3.max([220, 0.2 * heatmapWidth]),
+      outerRowWidth = d3.max([90, 0.07 * heatmapWidth]),
       rowLabelWidth = innerRowWidth + outerRowWidth,
-      innerColHeight = 100,
-      outerColHeight = 20,
+      innerColHeight = d3.max([140, 0.15 * heatmapHeight]),
+      outerColHeight = d3.max([30, 0.02 * heatmapHeight]),
       colLabelHeight = innerColHeight + outerColHeight;
 
-  var gridHeight = heatmapHeight - colLabelHeight,
-      gridWidth = heatmapWidth - rowLabelWidth;
+  var histSize = 0.2 * heatmapWidth;
 
-  // console.log(gridWidth, heatmapHeight)
-
+  var gridHeight = heatmapHeight - colLabelHeight - histSize,
+      gridWidth = heatmapWidth - rowLabelWidth - histSize;
 
   /*
   #################################################
@@ -554,11 +536,11 @@ function draw(dataAll, rowLabelData, colLabelData) {
   */
 
           //SET THE INITIAL STATE OF THE OUTER LABELS
-
+  var count = true;
   var mainRowLabelState = initializeMainLabelState(rowLabelData) //creates the state data
   var mainColLabelState = initializeMainLabelState(colLabelData)
 
-  var gridPosition = gridData(mainRowLabelState, mainColLabelState, gridWidth, gridHeight, rowLabelData, colLabelData, dataAll, rowLabelWidth, colLabelHeight)
+  var gridPosition = gridData(mainRowLabelState, mainColLabelState, gridWidth, gridHeight, rowLabelData, colLabelData, dataAll, rowLabelWidth, colLabelHeight, count)
 
   //draw all the elements
 
@@ -577,17 +559,17 @@ function draw(dataAll, rowLabelData, colLabelData) {
   function drawColLabels(mainColState, currChartData){
     //set the label positions based on current state of the column labels
     var mainColPosData = setMainColLabelPosition(mainColState, gridWidth, innerColHeight, outerColHeight, colLabelData, rowLabelWidth)
-
-    //draw the grid extension lines
-
+    console.table(mainColPosData)
+    var wrapWidth = d3.max(mainColPosData, function(d) {return d.colWidth; })
     //remove existing elements
     heatmapSVG.selectAll(".subColLabels").remove()
 
+    //draw the grid extension lines
     var colLineData = []
     mainColPosData.forEach(function(d) {
       colLineData.push(d.xStart + 1)
     })
-    colLineData.push(heatmapWidth - 1) //push the final line position
+    colLineData.push(gridWidth + rowLabelWidth - 1) //push the final line position
 
     var lineColExtended = heatmapSVG.append('g').selectAll('.innerColLines')
       .data(colLineData)
@@ -604,7 +586,6 @@ function draw(dataAll, rowLabelData, colLabelData) {
     d3.selectAll(".mainColLabels").remove()
 
     if(mainColState.filter(function(d) {return d.expand}).length > 0){ //if expanded rotate
-
       var innerColLabels = heatmapSVG.append('g').selectAll(".mainColLabels")
         .data(mainColPosData.filter(function(d) { return !d.expand; }))
         .enter().append("text")
@@ -615,7 +596,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
         .attr('class', 'mainColLabels')
         .text(function(d) {return d.name})
         .attr("transform", "rotate(-90)")
-        //.call(wrap, 120)
+        .call(wrap, innerColHeight * 0.9)
         .on("click", onClickCols)
         .on("mouseover", mouseOverColName)
         .on("mouseout", mouseOutColName);
@@ -629,7 +610,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
         .attr('dy', 0)
         .attr('class', 'mainColLabels')
         .text(function(d) {return d.name})
-        //.call(wrap, 120)
+        .call(wrap, wrapWidth * 0.9)
         .on("click", onClickCols)
         .on("mouseover", mouseOverColName)
         .on("mouseout", mouseOutColName);
@@ -647,15 +628,8 @@ function draw(dataAll, rowLabelData, colLabelData) {
         .attr('class', 'subColLabels')
         .text(function(d) {return d.subLabel})
         .attr("transform", function(d) {return d.rotate ? "rotate(-90)" : "rotate(0)"; })
-        .call(wrap, 85)
-      //   function (d) { if(d.rotate) {
-      //     console.log(innerColHeight)
-      //     return innerColHeight * 0.6
-      //   } else {
-      //     console.log(d.xIncrement)
-      //     return d.xIncrement * 0.6
-      //   }
-      // }
+        .call(wrap, innerColHeight * 0.8)
+
     } else {
       var innerColLabels = heatmapSVG.append('g').selectAll(".mainColLabels")
         .data(mainColPosData)
@@ -666,7 +640,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
         .attr('dy', 0)
         .attr('class', 'mainColLabels')
         .text(function(d) {return d.name})
-        //.call(wrap, 120)
+        .call(wrap, wrapWidth * 0.9)
         .on("click", onClickCols)
         .on("mouseover", mouseOverColName)
         .on("mouseout", mouseOutColName);
@@ -681,9 +655,8 @@ function draw(dataAll, rowLabelData, colLabelData) {
       //run the draw labels function
       drawColLabels(mainColState, currChartData)
 
-
       //update the grid
-      gridPosition = gridData(mainRowLabelState, mainColLabelState, gridWidth, gridHeight, rowLabelData, colLabelData, currChartData, rowLabelWidth, colLabelHeight)
+      gridPosition = gridData(mainRowLabelState, mainColLabelState, gridWidth, gridHeight, rowLabelData, colLabelData, currChartData, rowLabelWidth, colLabelHeight, count)
 
       d3.selectAll('.grid').remove();
       drawGrid(gridPosition)
@@ -727,7 +700,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
     rowPosData.forEach(function(d) {
       rowLineData.push(d.yStart + 1)
     })
-    rowLineData.push(heatmapHeight + 1) //push the final line position
+    rowLineData.push(gridHeight + colLabelHeight + 1) //push the final line position
 
     var lineRowExtended = heatmapSVG.append('g').selectAll('.innerRowLines')
       .data(rowLineData)
@@ -745,7 +718,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
       .data(rowPosData.filter(function(d) {return !d.expand}))
       .enter().append("text")
       .attr("text-anchor", "end")
-      .attr("alignment-baseline", "middle")
+      .style("alignment-baseline", "hanging")
       .attr('x', function(d){ return d.x})
       .attr('y', function(d) {return d.y - 5})
       .attr('dy', 0)
@@ -779,7 +752,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
         .data(innerSubLabelPositions)
         .enter().append("text")
         .attr("text-anchor", "end")
-        .attr("alignment-baseline", "middle")
+        .attr("alignment-baseline", "baseline")
         .attr('x', function(d){ return d.x})
         .attr('y', function(d) {return d.y})
         .attr('dy', 0)
@@ -797,10 +770,9 @@ function draw(dataAll, rowLabelData, colLabelData) {
         drawRowLabels(mainRowLabelState, currChartData)
 
         //update the grid
-        gridPosition = gridData(mainRowLabelState, mainColLabelState, gridWidth, gridHeight, rowLabelData, colLabelData, currChartData, rowLabelWidth, colLabelHeight)
+        gridPosition = gridData(mainRowLabelState, mainColLabelState, gridWidth, gridHeight, rowLabelData, colLabelData, currChartData, rowLabelWidth, colLabelHeight, count)
 
         d3.selectAll('.grid').remove(); //remove grid before redrawing
-        legendSVG.selectAll("*").remove()
 
         drawGrid(gridPosition)
 
@@ -859,11 +831,112 @@ function draw(dataAll, rowLabelData, colLabelData) {
     d3.selectAll('.grid')
       .attr('fill', function(d) {return ((d.fill === 0) ? "#b4b4b4" : colorScale(d.fill)); })
 
+    //DRAWING THE bars
+    //create the bar data one for rows and one for columns
+
+    var currRowLabels = unique(gridPosition.map(function(d) { return d.rowLabel; }))
+
+    var rowBarsData = [];
+    var rowBarXPosition = d3.max(gridPosition, function(d) { return d.x + d.width; }), //set the x position
+        rowBarYPosition,
+        rowBarWidth,
+        rowBarHeight = d3.max(gridPosition, function(d) { return d.height; }),
+        tempData;
+
+    currRowLabels.forEach(function(d) {
+      tempData = gridPosition.filter(function(e) { return e.rowLabel === d; })
+      rowBarWidth = tempData.reduce(function(prev, e){ return prev + e.fill; }, 0)
+      rowBarYPosition = d3.max(tempData, function(e) { return e.y; });
+      rowBarsData.push({
+        x: rowBarXPosition,
+        y: rowBarYPosition,
+        height: rowBarHeight,
+        width: rowBarWidth
+      })
+    });
+
+    var currColLabels = unique(gridPosition.map(function(d) { return d.colLabel; }))
+
+    var colBarsData = [];
+    var colBarXPosition, //set the x position
+        colBarYPosition = d3.max(gridPosition, function(d) { return d.y + d.height; }),
+        colBarWidth = d3.max(gridPosition, function(d) { return d.width; }),
+        colBarHeight,
+        tempData;
+
+    currColLabels.forEach(function(d) {
+      tempData = gridPosition.filter(function(e) { return e.colLabel === d; })
+      colBarHeight = tempData.reduce(function(prev, e){ return prev + e.fill; }, 0)
+      colBarXPosition = d3.max(tempData, function(e) { return e.x; });
+      colBarsData.push({
+        x: colBarXPosition,
+        y: colBarYPosition,
+        height: colBarHeight,
+        width: colBarWidth
+      })
+    })
+
+
+    //set the scales
+    var rowBarScale = d3.scaleLinear()
+      .domain([0, d3.max(rowBarsData, function(d) { return d.width; })])
+      .range([0, histSize])
+
+    var colBarScale = d3.scaleLinear()
+      .domain([0, d3.max(colBarsData, function(d) { return d.height; })])
+      .range([0, histSize])
+
+    //drawing the bars
+    //remove existing bars
+    heatmapSVG.selectAll(".rowBars").remove()
+    heatmapSVG.selectAll(".rowBarAxis").remove()
+    heatmapSVG.selectAll(".colBars").remove()
+    heatmapSVG.selectAll(".colBarAxis").remove()
+
+    var barPadding = 2;
+
+    var rowBars = heatmapSVG.append('g').selectAll(".rowBars")
+      .data(rowBarsData)
+      .enter().append("rect")
+      .attr("class", "rowBars")
+      .attr("x", function(d) { return d.x; })
+      .attr("y", function(d) { return d.y + barPadding; })
+      .attr("width", function(d) { return rowBarScale(d.width); })
+      .attr("height", function(d) { return d.height - (2 * barPadding); })
+      .attr("fill-opacity", 0.6);
+
+    var rowBarAxis = heatmapSVG.append('g')
+      .attr("class", "rowBarAxis")
+      .attr("transform", "translate("+ (rowLabelWidth + gridWidth) + "," + (colLabelHeight + gridHeight) + ")")
+      .call(d3.axisBottom(rowBarScale)
+        .ticks(4))
+      .attr("text-anchor", "middle")
+
+    var colBars = heatmapSVG.append('g').selectAll(".colBars")
+      .data(colBarsData)
+      .enter().append("rect")
+      .attr("class", "colBars")
+      .attr("x", function(d) { return d.x; })
+      .attr("y", function(d) { return d.y + barPadding; })
+      .attr("width", function(d) { return d.width - (2 * barPadding); })
+      .attr("height", function(d) { return colBarScale(d.height); })
+      .attr("fill-opacity", 0.6);
+
+    var colBarAxis = heatmapSVG.append('g')
+      .attr("class", "colBarAxis")
+      .attr("transform", "translate("+ (rowLabelWidth + gridWidth) + "," + (colLabelHeight + gridHeight) + ")")
+      .call(d3.axisRight(colBarScale)
+        .ticks(4))
+      .attr("text-anchor", null)
+      .attr("alignment-baseline", "hanging")
+      // .selectAll("text")
+      // .attr("x", 5)
+
       //drawing the legend
-    var legendXPos = outerRowWidth;
-    var legendYPos = colLabelHeight * 0.5;
+    var legendXPos = outerRowWidth * 1.3;
+    var legendYPos = colLabelHeight * 0.7;
     var legendWidth = rowLabelWidth * 0.6;
-    var legendHeight = colLabelHeight/3;
+    var legendHeight = colLabelHeight/5;
 
     //remove all things attached to the legend svg
     heatmapSVG.selectAll(".legendBars").remove()
@@ -931,7 +1004,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
         .transition()
         .duration(200)
         .attr("x", axisScale(d.fill) + 1.5 + legendXPos )
-        .text(d.fill)
+        .text(Math.round(d.fill))
     }
 
     function mouseOutGrid(d){
@@ -946,6 +1019,9 @@ function draw(dataAll, rowLabelData, colLabelData) {
           .text("")
 
     }
+    heatmapSVG.selectAll(".tick")
+    .filter(function (d) { return d === 0;  })
+    .remove();
   }
 
 
@@ -959,54 +1035,88 @@ function draw(dataAll, rowLabelData, colLabelData) {
   var gP = "All GPs";
   var tempData = dataAll;
 
-  function onChangeFunction(){
-
-    if(country !="World"){
-      tempData = tempData.filter(function(d) { return d.projCountry === country; })
-    }
-    if(region != "World"){
-      tempData = tempData.filter(function(d) { return d.projRegion === region; })
-    }
-    if(gP != "All GPs"){
-      tempData = tempData.filter(function(d) { return d.gP === gP; })
-    }
-
+  function onChangeFunction(currData){
     //SET THE INITIAL STATE OF THE OUTER LABELS
-    mainRowLabelState = initializeMainLabelState(rowLabelData) //creates the state data
-    mainColLabelState = initializeMainLabelState(colLabelData)
+    // mainRowLabelState = initializeMainLabelState(rowLabelData) //creates the state data
+    // mainColLabelState = initializeMainLabelState(colLabelData)
 
-    gridPosition = gridData(mainRowLabelState, mainColLabelState, gridWidth, gridHeight, rowLabelData, colLabelData, tempData, rowLabelWidth, colLabelHeight)
+    gridPosition = gridData(mainRowLabelState, mainColLabelState, gridWidth, gridHeight, rowLabelData, colLabelData, currData, rowLabelWidth, colLabelHeight, count)
 
     //draw all the elements
-    drawRowLabels(mainRowLabelState, tempData)
-    drawColLabels( mainColLabelState, tempData)
+    drawRowLabels(mainRowLabelState, currData)
+    drawColLabels( mainColLabelState, currData)
     drawGrid(gridPosition)
   }
 
   $("#countryList").on('change', function(d) {
     //set the country variable
     country = this.value;
+    //update the temp data
+    tempData = dataAll; //reset temp data
+    if(region != "World") {
+      tempData = dataAll.filter(function(e) { return e.projRegion === region; })
+    }
+    if(gP != "All GPs"){
+      tempData = dataAll.filter(function(e) { return e.gP === gP; })
+    }
+
+    if(country != "World") {
+      tempData = tempData.filter(function(e) { return e.projCountry === country; })
+    }
 
     //execute the change function
-    onChangeFunction()
+    onChangeFunction(tempData)
   })
 
   $("#regionList").on('change', function(d) {
     //set the region variable
     region = this.value;
 
+    tempData = dataAll; //reset temp data
+    if(country != "World") {
+      tempData = dataAll.filter(function(e) { return e.projCountry === country; })
+    }
+    if(gP != "All GPs"){
+      tempData = dataAll.filter(function(e) { return e.gP === gP; })
+    }
+
+    //update the temp data
+    if(region != "World") {
+      tempData = tempData.filter(function(e) { return e.region === region; })
+    }
+
     //execute the change function
-    onChangeFunction()
+    onChangeFunction(tempData)
   })
 
   $("#gpList").on('change', function(d) {
     //set the gP variable
     gP = this.value;
 
+    tempData = dataAll; //reset temp data
+    if(region != "World") {
+      tempData = dataAll.filter(function(e) { return e.projRegion === region; })
+    }
+    if(country != "World"){
+      tempData = dataAll.filter(function(e) { return e.projCountry === country; })
+    }
+
+    //update the temp data
+    if(gP != "All GPs"){
+      tempData = tempData.filter(function(e) { return e.gP === gP; })
+    }
+    console.log(tempData)
     //execute the change function
-    onChangeFunction()
+    onChangeFunction(tempData)
   })
 
+  d3.select('#moneyCount').on('change', function(){
+
+    count = !count; //switch the value of count
+
+    //update the grid
+    onChangeFunction(tempData)
+  })
   /*
   #################################################
   SECTION 3: THE DOWNLOAD IMAGE AND DATA BUTTONS
@@ -1014,9 +1124,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
   */
 
   d3.select("#saveChartButton").on("click", function(){
-    // console.log(document.getElementById("heatmapSVG"))
     saveSvgAsPng(document.getElementById("heatmapSVG"), "heatmap.png")
-    // saveSvgAsPng(document.getElementById("legend"), "legend.png")
   });
 
   window.exportData = function exportData() {

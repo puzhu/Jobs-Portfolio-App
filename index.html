@@ -17,32 +17,39 @@
 <body>
   <div class="container">
     <div class="row" id='lead-section'>
-      <h2>Jobs Portfolio Dashboard</h2>
+      <h2>Jobs Portfolio Visualized Through Jobs Conceptual Framework (JCF)</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum lorem velit, sed convallis lectus rhoncus sit amet. Proin ut egestas diam. Nullam mi odio, maximus accumsan lacus at, dapibus auctor purus. Vivamus volutpat ante pulvinar neque placerat maximus. Cras malesuada leo eget rutrum lacinia.
+        The Jobs Conceptual Framework (JCF) is an evaluative tool that helps visualize the links between development policies on the vertical axis and job outcomes on the horizontal axis. Interventions include policies at macro and regulatory level; sectoral and regional levels; and policies related to labor. Job outcomes relate to job creation, quality and access in addition to intermediate outcomes. Cell density represent the extent to which a policy intervention addresses the jobs relevant outcome. You can find the definitions of the headings <a href="data/Definitions for Data Visualization.pdf" target="_blank">here</a>.
       </p>
     </div>
-    <div class="row" id="controls">
-      <div class="col-xs-2 text-center" id="country">
-        <p>Select Country</p>
-        <select id="countryList" style="width: 95%">
-          <option value="World" selected="selected">World</option>
-        </select>
+    <div class="col-sm-12" id="controls">
+      <div class="col-sm-2 text-center" id="country">
+        <div class="row"><p>Select Country</p></div>
+        <div class="row">
+          <select id="countryList" style="width: 95%">
+            <option value="World" selected="selected">World</option>
+          </select>
+        </div>
+
       </div>
-      <div class="col-xs-2 text-center" id="GP">
-        <p>GP List</p>
-        <select id="gpList" style="width: 95%">
-          <option value="All GPs" selected="selected">All GPs</option>
-        </select>
+      <div class="col-sm-2 text-center" id="GP">
+        <div class="row"><p>GP List</p></div>
+        <div class="row">
+          <select id="gpList" style="width: 95%">
+            <option value="All GPs" selected="selected">All GPs</option>
+          </select>
+        </div>
       </div>
-      <div class="col-xs-2 text-center" id="region">
-        <p>Region List</p>
-        <select id="regionList" style="width: 95%">
-          <option value="World" selected="selected">World</option>
-        </select>
+      <div class="col-sm-2 text-center" id="region">
+        <div class="row"><p>Region List</p></div>
+        <div class="row">
+          <select id="regionList" style="width: 95%">
+            <option value="World" selected="selected">World</option>
+          </select>
+        </div>
       </div>
-      <div class="col-xs-2 text-center" id="moneyCount">
-        <p>Money/Count</p>
+      <div class="col-sm-2 text-center" id="moneyCount">
+        <div class="row"><p>Count/Money (mill. USD)</p></div>
         <div class="row">
           <label class="switch">
             <input type="checkbox" id="moneyCountSwitch">
@@ -50,17 +57,27 @@
           </label>
         </div>
       </div>
-      <div class="col-xs-2 saveButtons text-center">
-        <button class="btn btn-sm btn-default" id="downloadButton" style="width: 90%" onclick="window.exportData()"><i class="fa fa-floppy-o" aria-hidden="true"></i> Download Data</button>
+      <div class="col-sm-2 saveButtons text-center">
+        <button class="btn btn-sm btn-default" id="downloadButton" style="width: 80%" onclick="window.exportData()"><i class="fa fa-floppy-o fa-fw" aria-hidden="true"></i>    Data</button>
       </div>
-      <div class="col-xs-2 saveButtons text-center">
-        <button class="btn btn-sm btn-default" id="saveChartButton" style="width: 90%"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save Chart</button>
+      <div class="col-sm-2 saveButtons text-center">
+        <button class="btn btn-sm btn-default" id="saveChartButton" style="width: 80%"><i class="fa fa-floppy-o fa-fw" aria-hidden="true"></i>    Chart</button>
+      </div>
+    </div>
+    <div class="row" id="charts">
+      <div id="heatmap">
       </div>
     </div>
 
-    <div class="row" id="heatmap"></div>
-
   </div>
+  <script>
+    $(function() {
+      var div = $('#heatmap');
+      var width = div.width();
+
+      div.css('height', width * 0.7);
+    });
+  </script>
 
 
   <!-- <script src="scripts/preventCJ.js"></script> -->
