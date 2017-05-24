@@ -1083,10 +1083,11 @@ function draw(dataAll, rowLabelData, colLabelData) {
     }
 
     //update the temp data
+    console.log(tempData)
     if(region != "World") {
       tempData = tempData.filter(function(e) { return e.projRegion === region; })
     }
-    console.log(tempData)
+
 
     //execute the change function
     onChangeFunction(tempData)
