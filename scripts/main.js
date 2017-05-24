@@ -1084,8 +1084,9 @@ function draw(dataAll, rowLabelData, colLabelData) {
 
     //update the temp data
     if(region != "World") {
-      tempData = tempData.filter(function(e) { return e.region === region; })
+      tempData = tempData.filter(function(e) { return e.projRegion === region; })
     }
+    console.log(tempData)
 
     //execute the change function
     onChangeFunction(tempData)
@@ -1107,7 +1108,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
     if(gP != "All GPs"){
       tempData = tempData.filter(function(e) { return e.gP === gP; })
     }
-    console.log(tempData)
+
     //execute the change function
     onChangeFunction(tempData)
   })
