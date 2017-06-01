@@ -43,7 +43,7 @@ moneyData <- appData %>%
         filter(Proj.Status != "Closed" & !is.na(Intervention)) %>% 
         gather(key = subColLabel, value = money, 25:36) %>% 
         rowwise() %>% 
-        mutate(subColLabel = str_replace(subColLabel, "__2", "")) %>% 
+        mutate(subColLabel = str_replace(subColLabel, "__2|__1", "")) %>% 
         select(Proj.ID, Intervention, subColLabel, money)
 
 appData <- left_join(countData, moneyData, by = c("Proj.ID", "Intervention", "subColLabel")) %>% 
@@ -51,7 +51,7 @@ appData <- left_join(countData, moneyData, by = c("Proj.ID", "Intervention", "su
         left_join(., rowLabelData, by = c("Intervention" = "subRowLabel")) %>% 
         mutate(money = ifelse(is.na(money), 0, money))
 
-
+names(appData)
 
 names(appData) <- c("projId", "projName", "cluster", "gP", "projType", "projFY", "projApproval", "projRegion", "projCountry", "countryClassification", "IBRDCommit", "IDACommit", "totalCommit", "projProductLineKey", "projProductLine", "projOutputKey", "projOutputType", "projStatus", "projContribGPs", "projCCSA", "objective", "description", "projURL", "subRowLabel", "subColLabel", "count", "money","mainColLabel", "mainRowLabel")
 ```
