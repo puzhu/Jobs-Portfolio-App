@@ -23,7 +23,7 @@ The data pre-processing steps are as follows
 
 ```{r, message=FALSE}
 rm(list = ls())
-library(tidyverse); library(readxl)
+library(tidyverse); library(readxl); library(stringr)
 
 ##Load the excel file with the data
 rowLabelData <- read_csv("raw data/interventionTypes.csv")

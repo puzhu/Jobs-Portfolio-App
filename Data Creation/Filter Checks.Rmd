@@ -1,0 +1,42 @@
+---
+title: "Create the dataset for Jobs Portfolio Visualisation : Version 2"
+output: 
+  html_notebook: 
+    number_sections: yes
+---
+##Summary
+This file creates the app data for version 2.
+
+##Summary
+The data relevant to the portfolio visualisation was copied from the excel file that was sent by Vinay into a .csv. This file is loaded in this section to create the final dataset.
+
+The initial version of this file used the data from the first framework model. This was changed towards the end. 
+
+The current file is set up for the new dataset. In addition, the file also includes an ordering table. This is used to create fixed labels instead of generating them from the data. Eventually, the final format created here will be used as the template to create the dataset for the App.
+
+##Loading the data
+The data pre-processing steps are as follows
+
+1. Remove all the unneccasary columns
+2. Filter out the projects that are either active or in the pipeline.
+3. Gather the data into a long format that represents the job types as a column
+4. Join in the intervention types (macro meso etc) and the job types (more, better etc)
+5. Change variable names
+6. Filter out the rows with relevant values (i.e. the categories marked "yes")
+
+```{r, message=FALSE}
+rm(list = ls())
+library(tidyverse)
+
+appData <- read_csv("../data/appData-Oct-2017.csv")
+names(appData)
+```
+
+
+```{r}
+filterData <- appData %>% 
+        filter(projCountry == "Armenia" & gP == "Trade & Competitiveness GP")
+
+unique(appData$gP)
+```
+

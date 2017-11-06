@@ -124,6 +124,7 @@ function generateDropDown(indicatorId, listName, defaultName, data, projectLimit
       })
     }
   })
+
   $(indicatorId).select2({
     data: listData
   })
@@ -480,9 +481,9 @@ SECTION 2: LOAD THE DATA FILES AND PROCESS THEM
 #################################################
 */
 d3.queue()
-    .defer(d3.csv, "data/appData.csv")
-    .defer(d3.csv, "data/rowLabels.csv")
-    .defer(d3.csv, "data/colLabels.csv")
+    .defer(d3.csv, "data/appData-Oct-2017.csv")
+    .defer(d3.csv, "data/rowLabels-Oct-2017.csv")
+    .defer(d3.csv, "data/colLabels-Oct-2017.csv")
     // .defer(d3.csv, "data/gdpPerCapData.csv", processallBrushData)
     .await(ready);
 
@@ -491,12 +492,13 @@ function ready(error, dataAll, rowLabelData, colLabelData) {
 }
 
 function draw(dataAll, rowLabelData, colLabelData) {
+  // console.log($("#countryList"))
 
-  // console.log(rowLabelData)
   //geerate all the dropdown lists
   generateDropDown("#countryList", "projCountry", "World", dataAll, 15)
   generateDropDown("#regionList", "projRegion", "World", dataAll, 15)
   generateDropDown("#gpList", "gP", "All GPs", dataAll, 15)
+  generateDropDown("#projectStatusList", "projStatus", "All Projects", dataAll, 15)
 
 
   /*
@@ -516,6 +518,8 @@ function draw(dataAll, rowLabelData, colLabelData) {
       yHeatmapScale = heatmapChars.yScale;
 
 
+
+
   var innerRowWidth = d3.max([220, 0.2 * heatmapWidth]),
       outerRowWidth = d3.max([90, 0.07 * heatmapWidth]),
       rowLabelWidth = innerRowWidth + outerRowWidth,
@@ -525,8 +529,11 @@ function draw(dataAll, rowLabelData, colLabelData) {
 
   var histSize = 0.2 * heatmapWidth;
 
-  var gridHeight = heatmapHeight - colLabelHeight - histSize,
-      gridWidth = heatmapWidth - rowLabelWidth - histSize;
+
+  var gridHeight = heatmapHeight - colLabelHeight
+  //- histSize,
+      gridWidth = heatmapWidth - rowLabelWidth
+      //- histSize;
 
   /*
   #################################################
@@ -539,6 +546,8 @@ function draw(dataAll, rowLabelData, colLabelData) {
   var count = true;
   var mainRowLabelState = initializeMainLabelState(rowLabelData) //creates the state data
   var mainColLabelState = initializeMainLabelState(colLabelData)
+
+  //console.log(rowLabelData)
 
   var gridPosition = gridData(mainRowLabelState, mainColLabelState, gridWidth, gridHeight, rowLabelData, colLabelData, dataAll, rowLabelWidth, colLabelHeight, count)
 
@@ -748,7 +757,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
 
 
       //Draw the inner labels
-      var innerSubLabelPositions = setSubRowLabelPosition(rowPosData, rowLabelData, rowLabelWidth)
+      var innerSubLabelPositions = setSubRowLabelPosition(rowPosData, rowLabelData, rowLabelWidth - 2)
 
       var innerRowSubLabel = heatmapSVG.append('g').selectAll('.subRowLabels')
         .data(innerSubLabelPositions)
@@ -880,57 +889,57 @@ function draw(dataAll, rowLabelData, colLabelData) {
 
 
     //set the scales
-    var rowBarScale = d3.scaleLinear()
-      .domain([0, d3.max(rowBarsData, function(d) { return d.width; })])
-      .range([0, histSize])
-
-    var colBarScale = d3.scaleLinear()
-      .domain([0, d3.max(colBarsData, function(d) { return d.height; })])
-      .range([0, histSize])
+    // var rowBarScale = d3.scaleLinear()
+    //   .domain([0, d3.max(rowBarsData, function(d) { return d.width; })])
+    //   .range([0, histSize])
+    //
+    // var colBarScale = d3.scaleLinear()
+    //   .domain([0, d3.max(colBarsData, function(d) { return d.height; })])
+    //   .range([0, histSize])
 
     //drawing the bars
     //remove existing bars
-    heatmapSVG.selectAll(".rowBars").remove()
-    heatmapSVG.selectAll(".rowBarAxis").remove()
-    heatmapSVG.selectAll(".colBars").remove()
-    heatmapSVG.selectAll(".colBarAxis").remove()
-
-    var barPadding = 2;
-
-    var rowBars = heatmapSVG.append('g').selectAll(".rowBars")
-      .data(rowBarsData)
-      .enter().append("rect")
-      .attr("class", "rowBars")
-      .attr("x", function(d) { return d.x; })
-      .attr("y", function(d) { return d.y + barPadding; })
-      .attr("width", function(d) { return rowBarScale(d.width); })
-      .attr("height", function(d) { return d.height - (2 * barPadding); })
-      .attr("fill-opacity", 0.6);
-
-    var rowBarAxis = heatmapSVG.append('g')
-      .attr("class", "rowBarAxis")
-      .attr("transform", "translate("+ (rowLabelWidth + gridWidth) + "," + (colLabelHeight + gridHeight) + ")")
-      .call(d3.axisBottom(rowBarScale)
-        .ticks(4))
-      .attr("text-anchor", "middle")
-
-    var colBars = heatmapSVG.append('g').selectAll(".colBars")
-      .data(colBarsData)
-      .enter().append("rect")
-      .attr("class", "colBars")
-      .attr("x", function(d) { return d.x; })
-      .attr("y", function(d) { return d.y + barPadding; })
-      .attr("width", function(d) { return d.width - (2 * barPadding); })
-      .attr("height", function(d) { return colBarScale(d.height); })
-      .attr("fill-opacity", 0.6);
-
-    var colBarAxis = heatmapSVG.append('g')
-      .attr("class", "colBarAxis")
-      .attr("transform", "translate("+ (rowLabelWidth + gridWidth) + "," + (colLabelHeight + gridHeight) + ")")
-      .call(d3.axisRight(colBarScale)
-        .ticks(4))
-      .attr("text-anchor", null)
-      .attr("alignment-baseline", "hanging")
+    // heatmapSVG.selectAll(".rowBars").remove()
+    // heatmapSVG.selectAll(".rowBarAxis").remove()
+    // heatmapSVG.selectAll(".colBars").remove()
+    // heatmapSVG.selectAll(".colBarAxis").remove()
+    //
+    // var barPadding = 2;
+    //
+    // var rowBars = heatmapSVG.append('g').selectAll(".rowBars")
+    //   .data(rowBarsData)
+    //   .enter().append("rect")
+    //   .attr("class", "rowBars")
+    //   .attr("x", function(d) { return d.x; })
+    //   .attr("y", function(d) { return d.y + barPadding; })
+    //   .attr("width", function(d) { return rowBarScale(d.width); })
+    //   .attr("height", function(d) { return d.height - (2 * barPadding); })
+    //   .attr("fill-opacity", 0.6);
+    //
+    // var rowBarAxis = heatmapSVG.append('g')
+    //   .attr("class", "rowBarAxis")
+    //   .attr("transform", "translate("+ (rowLabelWidth + gridWidth) + "," + (colLabelHeight + gridHeight) + ")")
+    //   .call(d3.axisBottom(rowBarScale)
+    //     .ticks(4))
+    //   .attr("text-anchor", "middle")
+    //
+    // var colBars = heatmapSVG.append('g').selectAll(".colBars")
+    //   .data(colBarsData)
+    //   .enter().append("rect")
+    //   .attr("class", "colBars")
+    //   .attr("x", function(d) { return d.x; })
+    //   .attr("y", function(d) { return d.y + barPadding; })
+    //   .attr("width", function(d) { return d.width - (2 * barPadding); })
+    //   .attr("height", function(d) { return colBarScale(d.height); })
+    //   .attr("fill-opacity", 0.6);
+    //
+    // var colBarAxis = heatmapSVG.append('g')
+    //   .attr("class", "colBarAxis")
+    //   .attr("transform", "translate("+ (rowLabelWidth + gridWidth) + "," + (colLabelHeight + gridHeight) + ")")
+    //   .call(d3.axisRight(colBarScale)
+    //     .ticks(4))
+    //   .attr("text-anchor", null)
+    //   .attr("alignment-baseline", "hanging")
       // .selectAll("text")
       // .attr("x", 5)
 
@@ -945,6 +954,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
     heatmapSVG.selectAll(".legendAxis").remove()
     heatmapSVG.selectAll(".markerText").remove()
     heatmapSVG.selectAll(".markerBar").remove()
+    heatmapSVG.selectAll(".legendTitle").remove()
 
 
     //axis scale determines the positioning of the text and the marker bars and the axis
@@ -995,6 +1005,13 @@ function draw(dataAll, rowLabelData, colLabelData) {
       .attr("fill", "green")
       .attr("fill-opacity", 0)
 
+    var legendTitle = heatmapSVG.append('text')
+      .attr("class", "legendTitle")
+      .attr("x", legendXPos)
+      .attr("y", legendYPos - 20)
+      .text("# of projects/$ value")
+      .attr("text-anchor", "start")
+
     function mouseOverGrid(d){
       d3.selectAll(".markerBar")
         .transition()
@@ -1035,6 +1052,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
   var country = "World";
   var region = "World";
   var gP = "All GPs";
+  var projStatus = "All Projects";
   var tempData = dataAll;
 
   function onChangeFunction(currData){
@@ -1046,20 +1064,25 @@ function draw(dataAll, rowLabelData, colLabelData) {
 
     //draw all the elements
     drawRowLabels(mainRowLabelState, currData)
-    drawColLabels( mainColLabelState, currData)
+    drawColLabels(mainColLabelState, currData)
     drawGrid(gridPosition)
   }
 
   $("#countryList").on('change', function(d) {
     //set the country variable
     country = this.value;
+
     //update the temp data
     tempData = dataAll; //reset temp data
+
     if(region != "World") {
-      tempData = dataAll.filter(function(e) { return e.projRegion === region; })
+      tempData = tempData.filter(function(e) { return e.projRegion === region; })
     }
     if(gP != "All GPs"){
-      tempData = dataAll.filter(function(e) { return e.gP === gP; })
+      tempData = tempData.filter(function(e) { return e.gP === gP; })
+    }
+    if(projStatus != "All Projects"){
+      tempData = tempData.filter(function(e) { return e.projStatus === projStatus; })
     }
 
     if(country != "World") {
@@ -1076,10 +1099,13 @@ function draw(dataAll, rowLabelData, colLabelData) {
 
     tempData = dataAll; //reset temp data
     if(country != "World") {
-      tempData = dataAll.filter(function(e) { return e.projCountry === country; })
+      tempData = tempData.filter(function(e) { return e.projCountry === country; })
     }
     if(gP != "All GPs"){
-      tempData = dataAll.filter(function(e) { return e.gP === gP; })
+      tempData = tempData.filter(function(e) { return e.gP === gP; })
+    }
+    if(projStatus != "All Projects"){
+      tempData = tempData.filter(function(e) { return e.projStatus === projStatus; })
     }
 
     //update the temp data
@@ -1096,15 +1122,42 @@ function draw(dataAll, rowLabelData, colLabelData) {
 
     tempData = dataAll; //reset temp data
     if(region != "World") {
-      tempData = dataAll.filter(function(e) { return e.projRegion === region; })
+      tempData = tempData.filter(function(e) { return e.projRegion === region; })
     }
     if(country != "World"){
-      tempData = dataAll.filter(function(e) { return e.projCountry === country; })
+      tempData = tempData.filter(function(e) { return e.projCountry === country; })
+    }
+    if(projStatus != "All Projects"){
+      tempData = tempData.filter(function(e) { return e.projStatus === projStatus; })
     }
 
     //update the temp data
     if(gP != "All GPs"){
       tempData = tempData.filter(function(e) { return e.gP === gP; })
+    }
+
+    //execute the change function
+    onChangeFunction(tempData)
+  })
+
+  $("#projectStatusList").on('change', function(d) {
+    //set the gP variable
+    projStatus = this.value;
+
+    tempData = dataAll; //reset temp data
+    if(region != "World") {
+      tempData = tempData.filter(function(e) { return e.projRegion === region; })
+    }
+    if(country != "World"){
+      tempData = tempData.filter(function(e) { return e.projCountry === country; })
+    }
+    if(gP != "All GPs"){
+      tempData = tempData.filter(function(e) { return e.gP === gP; })
+    }
+
+    //update the temp data
+    if(projStatus != "All Projects"){
+      tempData = tempData.filter(function(e) { return e.projStatus === projStatus; })
     }
 
     //execute the change function
@@ -1124,12 +1177,16 @@ function draw(dataAll, rowLabelData, colLabelData) {
   #################################################
   */
 
+  var downloadData = tempData;
+
+  console.log(tempData)
+  
   d3.select("#saveChartButton").on("click", function(){
     saveSvgAsPng(document.getElementById("heatmapSVG"), "heatmap.png")
   });
 
   window.exportData = function exportData() {
-      alasql("SELECT * INTO CSV('jobsPortfolioData.csv') FROM ?",[tempData]);
+      alasql("SELECT * INTO CSV('jobsPortfolioData.csv') FROM ?",[downloadData]);
   }
 
 }

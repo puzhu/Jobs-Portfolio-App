@@ -107,7 +107,7 @@ These functions are directly linked to the current project
 
 function generateDropDown(indicatorId, listName, defaultName, data, projectLimit) {
 	//generate the unique list of values.
-  var listVals = unique(data.map(function(d) { return d[listName]; })).sort()
+  var listVals = unique(data.map(function(d) { return d[listName]; })
 
 
   //for each item in the list if the n projects is greater than the project limit then push
@@ -493,9 +493,9 @@ SECTION 2: LOAD THE DATA FILES AND PROCESS THEM
 #################################################
 */
 d3.queue()
-    .defer(d3.csv, "data/appData.csv")
-    .defer(d3.csv, "data/rowLabels.csv")
-    .defer(d3.csv, "data/colLabels.csv")
+    .defer(d3.csv, "data/appDataOct-2017.csv")
+    .defer(d3.csv, "data/rowLabels-Oct-2017.csv")
+    .defer(d3.csv, "data/colLabels-Oct-2017.csv")
     // .defer(d3.csv, "data/gdpPerCapData.csv", processallBrushData)
     .await(ready);
 
@@ -504,6 +504,9 @@ function ready(error, dataAll, rowLabelData, colLabelData) {
 }
 
 function draw(dataAll, rowLabelData, colLabelData) {
+  console.log(rowLabelData)
+  var projStatus = unique(dataAll.map(function(d) { return d.projStatus; })
+  
   // console.log(rowLabelData)
   //geerate all the dropdown lists
   generateDropDown("#countryList", "projCountry", "World", dataAll, 15)

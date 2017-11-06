@@ -1,0 +1,78 @@
+---
+title: "Create the dataset for Jobs Portfolio Visualisation : Version 2"
+output: 
+  html_notebook: 
+    number_sections: yes
+---
+##Summary
+This file creates the app data for version 2.
+
+##Summary
+The data relevant to the portfolio visualisation was copied from the excel file that was sent by Vinay into a .csv. This file is loaded in this section to create the final dataset.
+
+The initial version of this file used the data from the first framework model. This was changed towards the end. 
+
+The current file is set up for the new dataset. In addition, the file also includes an ordering table. This is used to create fixed labels instead of generating them from the data. Eventually, the final format created here will be used as the template to create the dataset for the App.
+
+##Loading the data
+The data pre-processing steps are as follows
+
+1. Remove all the unneccasary columns
+2. Filter out the projects that are either active or in the pipeline.
+3. Gather the data into a long format that represents the job types as a column
+4. Join in the intervention types (macro meso etc) and the job types (more, better etc)
+5. Change variable names
+6. Filter out the rows with relevant values (i.e. the categories marked "yes")
+
+```{r, message=FALSE}
+rm(list = ls())
+library(tidyverse); library(readxl); library(stringr)
+
+##Load the excel file with the data
+rowLabelData <- read_csv("raw data Oct/interventionTypes.csv")
+colLabelData <- read_csv("raw data Oct/jobTypes.csv")
+appData <- read_excel("raw data Oct/Jobs_Portfolio_Outputs_All_JasmineRabia_For Visualization_08-08-17. (Edited).xlsx", sheet = 3, skip = 2)
+
+
+##Get the count and money data in long format
+countData <- appData %>% 
+        select(1:23, 230:242) %>% 
+        filter(!is.na(Intervention)) %>% 
+        gather(key = subColLabel, value = count, 25:36) %>% 
+        filter(!is.na(count)) %>% 
+        mutate(count = 1)
+        
+moneyData <- appData %>% 
+        select(1:23, 230, 264:275) %>% 
+        filter(!is.na(Intervention)) %>% 
+        gather(key = subColLabel, value = money, 25:36) %>% 
+        rowwise() %>% 
+        mutate(subColLabel = str_replace(subColLabel, "__2|__1", "")) %>% 
+        select(Proj.ID, Intervention, subColLabel, money)
+
+appData <- left_join(countData, moneyData, by = c("Proj.ID", "Intervention", "subColLabel")) %>% 
+        left_join(., colLabelData, by = c("subColLabel" = "subColLabel")) %>% 
+        left_join(., rowLabelData, by = c("Intervention" = "subRowLabel")) %>% 
+        mutate(money = ifelse(is.na(money), 0, money))
+
+
+names(appData) <- c("projId", "projName", "cluster", "gP", "projType", "projFY", "projApproval", "projRegion", "projCountry", "countryClassification", "IBRDCommit", "IDACommit", "totalCommit", "projProductLineKey", "projProductLine", "projOutputKey", "projOutputType", "projStatus", "projContribGPs", "projCCSA", "objective", "description", "projURL", "subRowLabel", "subColLabel", "count", "money","mainColLabel", "mainRowLabel")
+
+unique(appData$projStatus)
+```
+
+##Variable checks
+All the variable values were checked to make sure that they were consistent. THe only issue is that the country variable does not accurately represent projects that span multiple countries. Entries are labelled as continents for such cases.
+
+##Selecting specific variables to be used for the visualisation
+Here I further narrow the data to select only those variables that are being used in the current iteration of the app. This list can be widened when we need to.
+
+```{r}
+appData <- appData %>%
+        arrange(projId) %>% 
+        ungroup() %>%
+        mutate(subColLabel = ifelse(subColLabel == "Entrepreneurs/self-employed", "Entrepreneurs/ self-employed", subColLabel))
+
+write_csv(appData, "../data/appDataOct-2017.csv")
+
+```
