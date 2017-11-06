@@ -14,7 +14,7 @@ header('X-Content-Type-Options: nosniff'); //Prevent MIME types security risk
 <meta http-equiv="Cache-control" content="no-store">
 
 <head>
-<title>Jobs Portfolio Visualization</title>
+<title>Jobs  Data Visualization Tool</title>
 
 <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
@@ -29,7 +29,7 @@ header('X-Content-Type-Options: nosniff'); //Prevent MIME types security risk
     <div class="row" id='lead-section'>
       <h2>Jobs Portfolio Visualized Through Jobs Conceptual Framework (JCF)</h2>
       <p>
-        The Jobs Conceptual Framework (JCF) is an evaluative tool that helps visualize the links between development policies on the vertical axis and job outcomes on the horizontal axis. Interventions include policies at macro and regulatory level; sectoral and regional levels; and policies related to labor. Job outcomes relate to job creation, quality and access in addition to intermediate outcomes. Cell density represent the extent to which a policy intervention addresses the jobs relevant outcome. You can find the definitions of the headings <a href="data/Definitions for Data Visualization.pdf" target="_blank">here</a>.
+        The jobs visualization tool is an interactive graphic that analyzes the World Bank project interventions and the outcomes they target. The portfolio of World Bank projects in the last decade (FY 2005- FY 2018) form the basis of the tool. The vertical axis represent policy interventions at macro level, sectoral level and policies related to labor. Outcomes on the horizontal axis relate to job creation, job quality and job access in addition to intermediate outcomes. Cell colors represent the frequency of an intervention targeting a particular outcome- darker colors represent higher frequencies. Definitions of the interventions and the outcomes can be found here. A guide to using the tool can be found <a href="data/Definitions for Data Visualization.pdf" target="_blank">here</a>.
       </p>
     </div>
     <div class="col-sm-12" id="controls">
@@ -58,6 +58,14 @@ header('X-Content-Type-Options: nosniff'); //Prevent MIME types security risk
           </select>
         </div>
       </div>
+      <div class="col-sm-2 text-center" id="projectStatus">
+        <div class="row"><p>Project Status</p></div>
+        <div class="row">
+          <select id="projectStatusList" style="width: 95%">
+            <option value="All Projects" selected="selected">All Projects</option>
+          </select>
+        </div>
+      </div>
       <div class="col-sm-2 text-center" id="moneyCount">
         <div class="row"><p>Count/Money (mill. USD)</p></div>
         <div class="row">
@@ -67,12 +75,16 @@ header('X-Content-Type-Options: nosniff'); //Prevent MIME types security risk
           </label>
         </div>
       </div>
-      <div class="col-sm-2 saveButtons text-center">
-        <button class="btn btn-sm btn-default" id="downloadButton" style="width: 80%" onclick="window.exportData()"><i class="fa fa-floppy-o fa-fw" aria-hidden="true"></i>    Data</button>
+      <div class="col-sm-2">
+        <div class="row saveButtons text-center">
+          <button class="btn btn-sm btn-default" id="downloadButton" style="width: 80%" onclick="window.exportData()"><i class="fa fa-floppy-o fa-fw" aria-hidden="true"></i>    Data</button>
+        </div>
+        <div class="row saveButtons text-center">
+          <button class="btn btn-sm btn-default" id="saveChartButton" style="width: 80%"><i class="fa fa-floppy-o fa-fw" aria-hidden="true"></i>    Chart</button>
+        </div>
+
       </div>
-      <div class="col-sm-2 saveButtons text-center">
-        <button class="btn btn-sm btn-default" id="saveChartButton" style="width: 80%"><i class="fa fa-floppy-o fa-fw" aria-hidden="true"></i>    Chart</button>
-      </div>
+
     </div>
     <div class="row" id="charts">
       <div id="heatmap">
