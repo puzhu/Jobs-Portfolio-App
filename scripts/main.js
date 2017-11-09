@@ -1180,7 +1180,7 @@ function draw(dataAll, rowLabelData, colLabelData) {
   var downloadData = tempData;
 
   console.log(tempData)
-  
+
   d3.select("#saveChartButton").on("click", function(){
     saveSvgAsPng(document.getElementById("heatmapSVG"), "heatmap.png")
   });
