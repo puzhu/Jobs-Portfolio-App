@@ -31,8 +31,8 @@ library(tidyverse); library(readxl); library(stringr)
 ##Load the excel file with the data
 rowLabelData <- read_csv("raw data Oct/interventionTypes.csv")
 colLabelData <- read_csv("raw data Oct/jobTypes.csv")
-appData <- read_excel("raw data Oct/Jobs_Portfolio_Outputs_All_JasmineRabia_For Visualization_08-08-17. (Edited).xlsx", sheet = 3, skip = 2)
-
+appData <- read_excel("raw data Oct/BBL_Data_Visualization Tool_M&E All Outputs.xlsx", sheet = "M & E_Outputs", skip = 2)
+names(appData)
 
 ##Get the count and money data in long format
 countData <- appData %>% 
@@ -41,6 +41,17 @@ countData <- appData %>%
         gather(key = subColLabel, value = count, 25:36) %>% 
         filter(!is.na(count)) %>% 
         mutate(count = 1)
+
+bangladesh <- appData %>% 
+        select(Proj.Country, 230:242) %>% 
+        filter(Proj.Country == "Bangladesh" & !is.na(Intervention)) %>% 
+        gather(key = subColLabel, value = count, 3:14) %>% 
+        filter(!is.na(count)) %>% 
+        mutate(count = 1)
+
+bangaladeshCompare <- countData %>% 
+        filter(Proj.Country == "Bangladesh") %>% 
+        select(Proj.Country, Intervention, subColLabel, count)
         
 moneyData <- appData %>% 
         select(1:23, 230, 264:275) %>% 
@@ -50,6 +61,9 @@ moneyData <- appData %>%
         mutate(subColLabel = str_replace(subColLabel, "__2|__1", "")) %>% 
         select(Proj.ID, Intervention, subColLabel, money)
 
+
+
+
 appData <- left_join(countData, moneyData, by = c("Proj.ID", "Intervention", "subColLabel")) %>% 
         left_join(., colLabelData, by = c("subColLabel" = "subColLabel")) %>% 
         left_join(., rowLabelData, by = c("Intervention" = "subRowLabel")) %>% 
@@ -58,7 +72,7 @@ appData <- left_join(countData, moneyData, by = c("Proj.ID", "Intervention", "su
 
 names(appData) <- c("projId", "projName", "cluster", "gP", "projType", "projFY", "projApproval", "projRegion", "projCountry", "countryClassification", "IBRDCommit", "IDACommit", "totalCommit", "projProductLineKey", "projProductLine", "projOutputKey", "projOutputType", "projStatus", "projContribGPs", "projCCSA", "objective", "description", "projURL", "subRowLabel", "subColLabel", "count", "money","mainColLabel", "mainRowLabel")
 
-unique(appData$projStatus)
+
 ```
 
 ##Variable checks
@@ -73,6 +87,8 @@ appData <- appData %>%
         ungroup() %>%
         mutate(subColLabel = ifelse(subColLabel == "Entrepreneurs/self-employed", "Entrepreneurs/ self-employed", subColLabel))
 
-write_csv(appData, "../data/appDataOct-2017.csv")
+
+
+write_csv(appData, "../data/appData-Oct-2017.csv")
 
 ```
