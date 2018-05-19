@@ -1176,10 +1176,51 @@ function draw(dataAll, rowLabelData, colLabelData) {
   SECTION 3: THE DOWNLOAD IMAGE AND DATA BUTTONS
   #################################################
   */
+  function formatDownload(data){
+    // console.log("Input data ------", data)
+    const projList = [... new Set(data.map(d => d.projId))]
+    const subColList = [... new Set(data.map(d => d.subColLabel))]
+    const removeKeys = ["count", "money", "mainColLabel", "subColLabel", "subRowLabel", "mainRowLabel"]
+    const keylist = Object.keys(data[0]).filter(d => !removeKeys.includes(d))
+    
+    const newData = projList.reduce((out, project) => {
+      const projData = data.filter(d => d.projId === project)
+      let startObj = keylist.reduce((outKey, key) => {
+        outKey[key] = projData[0][key]
+        return outKey
+      }, {})
+      startObj = Object.assign({}, startObj, {intervention: data[0].subRowLabel, interventionType: data[0].mainRowLabel})
+      
+      const finalOut = subColList.reduce((outKeys, col) => {
+        const colProjData = projData.filter(d => d.subColLabel === col)
+        //if the column data does not exist
+        if(colProjData.length === 0) {
+          outKeys[col] = "No"
+          outKeys[col + "money"] = 0
+        } else {
+          outKeys[col] = "Yes"
+          outKeys[col + "money"] = colProjData[0].money
+        }
+        return outKeys
+      }, startObj)
 
-  var downloadData = tempData;
+      // console.log(startObj)
+      
+      out.push(finalOut)
 
-  console.log(tempData)
+
+      return out;
+    }, [])
+
+    // console.log("Output data -----", newData)
+    
+
+    return newData
+
+  }
+  var downloadData = formatDownload(tempData);
+  
+  
 
   d3.select("#saveChartButton").on("click", function(){
     saveSvgAsPng(document.getElementById("heatmapSVG"), "heatmap.png")

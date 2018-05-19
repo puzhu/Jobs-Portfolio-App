@@ -27,7 +27,7 @@ header('X-Content-Type-Options: nosniff'); //Prevent MIME types security risk
 <body>
   <div class="container">
     <div class="row" id='lead-section'>
-      <h2>Jobs Visualization Tool Testing</h2>
+      <h2>Jobs Visualization Tool</h2>
       <p>
         The jobs visualization tool is an interactive graphic that analyzes the World Bank project interventions and the outcomes they target. The portfolio of World Bank projects in the last decade (FY 2005- FY 2018) form the basis of the tool. The vertical axis represent policy interventions at macro level, sectoral level and policies related to labor. Outcomes on the horizontal axis relate to job creation, job quality and job access in addition to intermediate outcomes. Cell colors represent the frequency of an intervention targeting a particular outcome- darker colors represent higher frequencies. Definitions of the interventions and the outcomes can be found <a href="data/Definitions for Data Visualization.pdf" target="_blank">here</a>. A guide to using the tool can be found <a href="data/DATA VIZUALIZATION TOOL_MANUAL_FINAL.pdf" target="_blank">here</a>.
       </p>
