@@ -1196,10 +1196,10 @@ function draw(dataAll, rowLabelData, colLabelData) {
         //if the column data does not exist
         if(colProjData.length === 0) {
           outKeys[col] = "No"
-          outKeys[col + "money"] = 0
+          outKeys[col + "_money"] = 0
         } else {
           outKeys[col] = "Yes"
-          outKeys[col + "money"] = colProjData[0].money
+          outKeys[col + "_money"] = colProjData[0].money
         }
         return outKeys
       }, startObj)
