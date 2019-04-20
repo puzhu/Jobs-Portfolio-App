@@ -1,0 +1,53 @@
+---
+title: "Create Portfolio App data (final version)"
+output: 
+  html_notebook: 
+    number_sections: yes
+---
+
+##Data input
+
+###File characteristics
+1. Formats: All inputs must be in `.csv` format. It has been sent to me in `.xlsx` format in the past and I have converted that into .csv or loaded as excel sheet. But this version of the file will only take it in as a .csv file. In case the starting point is an `.xlsx` file convert it to `.csv`.
+2. All new data must be placed in "data" folder with the following names
+        
+
+
+```{r, message=FALSE}
+rm(list = ls())
+library(tidyverse); library(readxl); library(stringr)
+
+##Load the excel file with the data
+oldRowLabelData <- read_csv("Archive/raw data Oct/interventionTypes.csv")
+oldColLabelData <- read_csv("Archive/raw data Oct/jobTypes.csv")
+oldData <- read_excel("Archive/raw data Oct/BBL_Data_Visualization Tool_M&E All Outputs.xlsx", sheet = "M & E_Outputs", skip = 2)
+
+newData <- read_csv("data/rawJobsData.csv")
+
+oldProjectChars <- oldData %>% 
+        select(1:23)
+
+projectChars <- newData %>% 
+        select(1:23)
+
+oldCountData <- oldData %>% 
+        select(1, 230:242)
+
+newCountData <- newData %>% 
+        select(1, 230:242)
+
+oldMoneyData <- oldData %>% 
+        select(1, 230, 264:275)
+
+newMoneyData <- newData %>% 
+        select(1, 230, 243:254)
+
+
+identical(names(newCountData), names(oldCountData))
+
+
+identical(names(projectChars), names(oldProjectChars))
+
+newMoneyData
+```
+
