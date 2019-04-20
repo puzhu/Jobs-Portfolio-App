@@ -15,7 +15,7 @@ header('X-Content-Type-Options: nosniff'); //Prevent MIME types security risk
 
 <head>
 <title>Jobs  Data Visualization Tool</title>
-
+<link rel="shortcut icon" href="#" />
 <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="styles/main.css">

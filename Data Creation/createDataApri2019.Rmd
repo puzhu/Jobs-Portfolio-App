@@ -12,42 +12,37 @@ output:
 2. All new data must be placed in "data" folder with the following names
         
 
-
-```{r, message=FALSE}
+```{r}
 rm(list = ls())
 library(tidyverse); library(readxl); library(stringr)
 
-##Load the excel file with the data
-oldRowLabelData <- read_csv("Archive/raw data Oct/interventionTypes.csv")
-oldColLabelData <- read_csv("Archive/raw data Oct/jobTypes.csv")
-oldData <- read_excel("Archive/raw data Oct/BBL_Data_Visualization Tool_M&E All Outputs.xlsx", sheet = "M & E_Outputs", skip = 2)
+##row/col names
 
-newData <- read_csv("data/rawJobsData.csv")
+rowLabelData <- read_csv("data/interventionTypes.csv")
+colLabelData <- read_csv("data/jobTypes.csv")
 
-oldProjectChars <- oldData %>% 
-        select(1:23)
-
-projectChars <- newData %>% 
-        select(1:23)
-
-oldCountData <- oldData %>% 
-        select(1, 230:242)
-
-newCountData <- newData %>% 
-        select(1, 230:242)
-
-oldMoneyData <- oldData %>% 
-        select(1, 230, 264:275)
-
-newMoneyData <- newData %>% 
-        select(1, 230, 243:254)
+## data
+newData <- read_csv("data/rawJobsData.csv") %>% 
+        select(1:23, 230:242) %>% 
+        gather(key = "subColLabel", value = "count", 25:36) %>% 
+        filter(!is.na(count)) %>% 
+        mutate(count = 1) 
 
 
-identical(names(newCountData), names(oldCountData))
+names(newData) <- c("projId", "projName", "cluster", "gP", "projType", "projFY", "projApproval", "projRegion", "projCountry", "countryClassification", "IBRDCommit", "IDACommit", "totalCommit", "projProductLineKey", "projProductLine", "projOutputKey", "projOutputType", "projStatus", "projContribGPs", "projCCSA", "objective", "description", "projURL", "subRowLabel", "subColLabel", "count")
 
+newData <- newData %>% 
+        group_by(projId) %>% 
+        mutate(money = totalCommit/n()) %>% 
+        ungroup() %>% 
+        left_join(., colLabelData, by = c("subColLabel")) %>% 
+        left_join(., rowLabelData, by = c("subRowLabel")) %>% 
+        mutate(money = ifelse(is.na(money), 0, money),
+               subColLabel = ifelse(subColLabel == "Entrepreneurs/self-employed", 
+                                    "Entrepreneurs/ self-employed", 
+                                    subColLabel)) %>% 
+        write_csv(., path = "../data/appData-Apr-2019.csv")
 
-identical(names(projectChars), names(oldProjectChars))
-
-newMoneyData
+write_csv(rowLabelData, "../data/rowLabels-Apr-2019.csv")
+write_csv(colLabelData, "../data/colLabels-Apr-2019.csv")
 ```
-

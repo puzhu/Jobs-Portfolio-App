@@ -482,8 +482,8 @@ SECTION 2: LOAD THE DATA FILES AND PROCESS THEM
 */
 d3.queue()
   .defer(d3.csv, "data/appData-Apr-2019.csv")
-  .defer(d3.csv, "data/rowLabels-Apr-2019.csv")
-  .defer(d3.csv, "data/colLabels-Apr-2019.csv")
+  .defer(d3.csv, "data/rowLabels-Oct-2017.csv")
+  .defer(d3.csv, "data/colLabels-Oct-2017.csv")
   // .defer(d3.csv, "data/gdpPerCapData.csv", processallBrushData)
   .await(ready);
 
@@ -493,7 +493,7 @@ function ready(error, dataAll, rowLabelData, colLabelData) {
 
 function draw(dataAll, rowLabelData, colLabelData) {
   // console.log($("#countryList"))
-
+  console.log(rowLabelData)
   //geerate all the dropdown lists
   generateDropDown("#countryList", "projCountry", "World", dataAll, 15)
   generateDropDown("#regionList", "projRegion", "World", dataAll, 15)
@@ -516,8 +516,6 @@ function draw(dataAll, rowLabelData, colLabelData) {
     heatmapSVG = heatmapChars.plotVar.attr("id", "heatmapSVG"),
     xHeatmapScale = heatmapChars.xScale,
     yHeatmapScale = heatmapChars.yScale;
-
-
 
 
   var innerRowWidth = d3.max([220, 0.2 * heatmapWidth]),
